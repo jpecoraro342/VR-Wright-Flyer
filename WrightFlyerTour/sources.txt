@@ -1,0 +1,4 @@
+http://docs.unity3d.com/
+https://github.com/JuppOtto/Google-Cardboard/
+https://developers.google.com/cardboard/overview
+http://docs.unity3d.com/ScriptReference/Transform-rotation.html
