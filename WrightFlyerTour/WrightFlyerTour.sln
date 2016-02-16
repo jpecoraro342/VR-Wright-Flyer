@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{1485E141-AC9E-D991-CD10-E0EDD987A195}") = "WrightFlyerTour", "Assembly-CSharp-firstpass.csproj", "{F15F31E4-7B91-5525-A04C-0B2A3A40464B}"
 EndProject
+Project("{1485E141-AC9E-D991-CD10-E0EDD987A195}") = "WrightFlyerTour", "Assembly-CSharp.csproj", "{5C673C5C-3CBC-C106-EC20-A4B5D0355B05}"
+EndProject
 Project("{1485E141-AC9E-D991-CD10-E0EDD987A195}") = "WrightFlyerTour", "Assembly-CSharp-Editor.csproj", "{AF86D3AC-F96E-50BC-CE77-1CD03589D7E4}"
 EndProject
 Global
@@ -15,6 +17,10 @@ Global
 		{F15F31E4-7B91-5525-A04C-0B2A3A40464B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F15F31E4-7B91-5525-A04C-0B2A3A40464B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F15F31E4-7B91-5525-A04C-0B2A3A40464B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C673C5C-3CBC-C106-EC20-A4B5D0355B05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C673C5C-3CBC-C106-EC20-A4B5D0355B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C673C5C-3CBC-C106-EC20-A4B5D0355B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C673C5C-3CBC-C106-EC20-A4B5D0355B05}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AF86D3AC-F96E-50BC-CE77-1CD03589D7E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AF86D3AC-F96E-50BC-CE77-1CD03589D7E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF86D3AC-F96E-50BC-CE77-1CD03589D7E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
