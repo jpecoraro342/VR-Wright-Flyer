@@ -23,7 +23,7 @@ public class WingWarpController : MonoBehaviour {
 
 	}
 
-	void Update() {
+	void FixedUpdate() {
 		wingWarpControl ();
 	}
 
