@@ -43,8 +43,6 @@ public class BackRudderController : MonoBehaviour {
 				Quaternion target = Quaternion.Euler (0, initialObjPositionY + objOffsetBackRudder - 0.1F, 0);
 				transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
                 leftRot = true;
-                print("Left stopped");
-                print(transform.eulerAngles.y);
 			}
 			// Want to be able to rotate CW from 0 to 20, OR from 340 (- 10) to 360
             else if (transform.eulerAngles.y < initialObjPositionY + objOffsetBackRudder || transform.eulerAngles.y >= overflowDegree - 10)
@@ -60,8 +58,6 @@ public class BackRudderController : MonoBehaviour {
 				Quaternion target = Quaternion.Euler (0, overflowDegree + 0.1F, 0);
 				transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
                 rightRot = true;
-                print("Right stopped");
-                print(transform.eulerAngles.y);
 			}
 			// Want to be able to rotate CCW from 20 (+ 10) to 0, OR 360 to 340
             else if (transform.eulerAngles.y < initialObjPositionY + objOffsetBackRudder + 10 || transform.eulerAngles.y >= overflowDegree)
