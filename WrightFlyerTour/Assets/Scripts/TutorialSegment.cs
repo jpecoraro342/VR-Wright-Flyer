@@ -25,11 +25,12 @@ public class TutorialSegment : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		tutText.text = "";
-		panel.gameObject.SetActive(true);	// Panel is set inactive in the Autowalk script
+		// panel.gameObject.SetActive(true);	// Panel is set inactive in the Autowalk script
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		panel.gameObject.SetActive(true);
 		if (!completedWingR) {
 			rollTut ();
 		}
