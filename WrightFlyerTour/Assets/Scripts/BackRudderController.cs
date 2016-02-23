@@ -20,7 +20,9 @@ public class BackRudderController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		head = Camera.main.GetComponent<StereoController>().Head;
-		initialOffset = head.transform.eulerAngles;
+		//initialOffset = head.transform.eulerAngles;
+		//print("Rudder: " + initialOffset.x + " " + initialOffset.y + " " + initialOffset.z);
+		initialOffset = new Vector3(0, 180, 0);
 
 		// Backrudder initial measurements
 		initialObjPositionY = transform.eulerAngles.y;
@@ -35,32 +37,32 @@ public class BackRudderController : MonoBehaviour {
 	}
 
 	void backRudderControl() {
-		if (head.transform.eulerAngles.y > initialOffset.y + 2 && !leftRot) {
+		if (head.transform.eulerAngles.y >= initialOffset.y + 2 && !leftRot) {
 			float speed = (float) ((head.transform.eulerAngles.y - (initialOffset.y + 2)) / 20);
 
 			// Object may get stuck after moving it, so check that it does not over rotate
-			if ((transform.eulerAngles.y > initialObjPositionY + objOffsetBackRudder) && transform.eulerAngles.y < overflowDegree && transform.eulerAngles.y < 180) {
+			if ((transform.eulerAngles.y >= initialObjPositionY + objOffsetBackRudder) && transform.eulerAngles.y <= overflowDegree && transform.eulerAngles.y <= 180) {
 				Quaternion target = Quaternion.Euler (0, initialObjPositionY + objOffsetBackRudder - 0.1F, 0);
 				transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
                 leftRot = true;
 			}
 			// Want to be able to rotate CW from 0 to 20, OR from 340 (- 10) to 360
-            else if (transform.eulerAngles.y < initialObjPositionY + objOffsetBackRudder || transform.eulerAngles.y >= overflowDegree - 10)
+            else if (transform.eulerAngles.y <= initialObjPositionY + objOffsetBackRudder || transform.eulerAngles.y >= overflowDegree - 10)
             {
                 transform.Rotate(0, speed, 0);
                 rightRot = false;
             }
         }
-		else if (head.transform.eulerAngles.y < initialOffset.y - 2 && !rightRot) {
+		else if (head.transform.eulerAngles.y <= initialOffset.y - 2 && !rightRot) {
 			float speed = (float) ((head.transform.eulerAngles.y - (initialOffset.y - 2)) / 20); 
 			
-			if ((transform.eulerAngles.y > initialObjPositionY + objOffsetBackRudder) && transform.eulerAngles.y < overflowDegree && transform.eulerAngles.y > 180) {
+			if ((transform.eulerAngles.y >= initialObjPositionY + objOffsetBackRudder) && transform.eulerAngles.y <= overflowDegree && transform.eulerAngles.y >= 180) {
 				Quaternion target = Quaternion.Euler (0, overflowDegree + 0.1F, 0);
 				transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
                 rightRot = true;
 			}
 			// Want to be able to rotate CCW from 20 (+ 10) to 0, OR 360 to 340
-            else if (transform.eulerAngles.y < initialObjPositionY + objOffsetBackRudder + 10 || transform.eulerAngles.y >= overflowDegree)
+            else if (transform.eulerAngles.y <= initialObjPositionY + objOffsetBackRudder + 10 || transform.eulerAngles.y >= overflowDegree)
             {
                 transform.Rotate(0, speed, 0);
                 leftRot = false;
