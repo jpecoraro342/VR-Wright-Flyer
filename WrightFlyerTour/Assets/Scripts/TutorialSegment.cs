@@ -19,11 +19,13 @@ public class TutorialSegment : MonoBehaviour {
 	private bool completedFrontRudR = false;
 
 	public Text tutText;
+	public Image panel;
 
 
 	// Use this for initialization
 	void Start () {
 		tutText.text = "";
+		panel.gameObject.SetActive(true);	// Panel is set inactive in the Autowalk script
 	}
 	
 	// Update is called once per frame
@@ -41,6 +43,7 @@ public class TutorialSegment : MonoBehaviour {
 		*/
 		else {
 			enabled = false;  // Turns off this script
+			panel.gameObject.SetActive(false);
 		}
 	}
 

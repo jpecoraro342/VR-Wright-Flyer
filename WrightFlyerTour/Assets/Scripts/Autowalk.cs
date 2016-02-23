@@ -8,12 +8,15 @@
 // haven't the Cardboard Unity SDK, download it from https://developers.google.com/cardboard/unity/download
 
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class Autowalk : MonoBehaviour 
 {
+
 	public AudioSource AudioFile;
+	public Image panel;
 	private const int RIGHT_ANGLE = 90; 
 	
 	// This variable determinates if the player will move or not 
@@ -45,6 +48,7 @@ public class Autowalk : MonoBehaviour
 	void Start () 
 	{
 		head = Camera.main.GetComponent<StereoController>().Head;
+		panel.gameObject.SetActive(false);
 	}
 	
 	void Update () 
