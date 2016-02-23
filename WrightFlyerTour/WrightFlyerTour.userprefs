@@ -1,10 +1,11 @@
-﻿<Properties StartupItem="Assembly-CSharp-firstpass.csproj">
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/FlightStats.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/CustomAirplaneUserControl.cs">
     <Files>
-      <File FileName="Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneUserControl4Axis.cs" Line="36" Column="4" />
-      <File FileName="Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneController.cs" Line="1" Column="1" />
-      <File FileName="Assets/_Scripts/FlightStats.cs" Line="1" Column="1" />
+      <File FileName="Assets/_Scripts/FlightStats.cs" Line="44" Column="49" />
+      <File FileName="Assets/_Scripts/GyroscopeEnable.cs" Line="19" Column="7" />
+      <File FileName="Assets/_Scripts/CustomAirplaneUserControl.cs" Line="17" Column="34" />
+      <File FileName="Assets/Imported Assets/Aircraft/Scripts/AeroplaneUserControl4Axis.cs" Line="32" Column="72" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
