@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class SubtitleManager : MonoBehaviour {
 
-	public Canvas subtitleCanvas;
+	public GameObject subtitleCanvas;
 	public Text subtitleText;
 
 	public GameObject subtitleTarget;
@@ -13,7 +13,7 @@ public class SubtitleManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		testSubtitleSequence();
 	}
 	
 	// Update is called once per frame
@@ -23,11 +23,11 @@ public class SubtitleManager : MonoBehaviour {
 
 	public IEnumerator playSubtitleForTime(string text, float duration, OnSubtitleFinished completionFunction) {
 		subtitleText.text = text;
-		subtitleCanvas.enabled = true;
+		subtitleCanvas.SetActive(true);
 
 		yield return new WaitForSeconds(duration);
 
-		subtitleCanvas.enabled = false;
+		subtitleCanvas.SetActive(false);
 		subtitleText.text = "";
 
 		if (completionFunction != null) {
