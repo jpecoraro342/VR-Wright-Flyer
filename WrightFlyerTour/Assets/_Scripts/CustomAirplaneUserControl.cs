@@ -17,6 +17,8 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
         private bool m_AirBrakes;
         private float m_Yaw;
 
+		public ThrottleManager throttle;
+		public MobileTiltControlsManager tiltControls;
 
         private void Awake()
         {
@@ -34,11 +36,16 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
             m_Yaw = CrossPlatformInputManager.GetAxis("Horizontal");
             m_Throttle = CrossPlatformInputManager.GetAxis("Vertical");
 
-			m_Throttle = 1;
+			roll = tiltControls.roll;
+			pitch = tiltControls.pitch;
+			m_Yaw = tiltControls.yaw;
 
-#if MOBILE_INPUT
-        AdjustInputForMobileControls(ref roll, ref pitch, ref m_Throttle);
-#endif
+			// Debug.Log("Raw Mouse X : " + roll + "\nRaw Mouse Y : " + pitch);
+
+			m_Throttle = throttle.getThrottle();
+
+        	// AdjustInputForMobileControls(ref roll, ref pitch, ref m_Throttle);
+
             // Pass the input to the aeroplane
             m_Aeroplane.Move(roll, pitch, m_Yaw, m_Throttle, m_AirBrakes);
         }

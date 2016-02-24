@@ -33,6 +33,7 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
             m_AirBrakes = CrossPlatformInputManager.GetButton("Fire1");
             m_Yaw = CrossPlatformInputManager.GetAxis("Horizontal");
             m_Throttle = CrossPlatformInputManager.GetAxis("Vertical");
+
 #if MOBILE_INPUT
         AdjustInputForMobileControls(ref roll, ref pitch, ref m_Throttle);
 #endif

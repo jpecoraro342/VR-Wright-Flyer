@@ -70,7 +70,7 @@ namespace UnityStandardAssets.CrossPlatformInput
                         break;
                 }
             }
-
+				
             float axisValue = Mathf.InverseLerp(-fullTiltAngle, fullTiltAngle, angle)*2 - 1;
             switch (mapping.type)
             {
@@ -78,9 +78,11 @@ namespace UnityStandardAssets.CrossPlatformInput
                     m_SteerAxis.Update(axisValue);
                     break;
                 case AxisMapping.MappingType.MousePositionX:
+					Debug.Log("Position X Axis Value = " + axisValue*Screen.width);
                     CrossPlatformInputManager.SetVirtualMousePositionX(axisValue*Screen.width);
                     break;
                 case AxisMapping.MappingType.MousePositionY:
+					Debug.Log("Position Y Axis Value = " + axisValue*Screen.width);
                     CrossPlatformInputManager.SetVirtualMousePositionY(axisValue*Screen.width);
                     break;
                 case AxisMapping.MappingType.MousePositionZ:
@@ -92,12 +94,13 @@ namespace UnityStandardAssets.CrossPlatformInput
 
         private void OnDisable()
         {
-            m_SteerAxis.Remove();
-        }
+			if (m_SteerAxis != null) {
+            	m_SteerAxis.Remove();
+			}
+        }	
     }
 }
-
-
+	
 namespace UnityStandardAssets.CrossPlatformInput.Inspector
 {
 #if UNITY_EDITOR
@@ -142,4 +145,5 @@ namespace UnityStandardAssets.CrossPlatformInput.Inspector
         }
     }
 #endif
+	
 }
