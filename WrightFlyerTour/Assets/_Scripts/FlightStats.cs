@@ -62,7 +62,7 @@ public class FlightStats : MonoBehaviour {
 	void setFlightTime(float flightTime) {
 		this.flightTime = flightTime;
 
-		if (Speed != null) {
+		if (AirTime != null) {
 			AirTime.text = "Air Time: " + flightTime.ToString("n2") + " sec";
 		}
 		else {
