@@ -22,15 +22,15 @@ public class MobileTiltControlsManager : MonoBehaviour {
 	void Update () {
 		var direction = mainCharacter.transform.localEulerAngles;
 
-		roll = getComputedValue(direction.z); 
+		roll = -1*getComputedValue(direction.z); 
 		pitch = getComputedValue(direction.x);
 		yaw = getComputedValue(direction.y);
 	}
 
 	float getComputedValue(float angle) {
 		var adjusted = getAdjustedAngle(angle);
-		var trimmed = Mathf.Clamp(adjusted, minVal, maxVal);
-		return scaleDown(trimmed, maxVal);
+		// var trimmed = Mathf.Clamp(adjusted, minVal, maxVal);
+		return scaleDown(adjusted, 180);
 	}
 
 	float getAdjustedAngle(float angle) {
