@@ -15,7 +15,7 @@ public class RotatingVRHead : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rotateVector = Vector3.zero;
-		StartCoroutine(testSequence());
+		// StartCoroutine(testSequence());
 	}
 	
 	// Update is called once per frame
@@ -31,7 +31,7 @@ public class RotatingVRHead : MonoBehaviour {
 		transform.Rotate(Vector3.Scale(rotateVector, scale));
 	}
 
-	void startPitchRotate() {
+	public void startPitchRotate() {
 		stopRotate();
 		pitchArrow.SetActive(true);
 		rotateVector = new Vector3(0,0,1);
@@ -39,21 +39,21 @@ public class RotatingVRHead : MonoBehaviour {
 	}
 		
 
-	void startRollRotate() {
+	public void startRollRotate() {
 		stopRotate();
 		rollArrow.SetActive(true);
 		rotateVector = new Vector3(1,0,0);
 		Debug.Log("Roll rotate started");
 	}
 
-	void startYawRotate() {
+	public void startYawRotate() {
 		stopRotate();
 		yawArrow.SetActive(true);
 		rotateVector = new Vector3(0,1,0);
 		Debug.Log("Yaw rotate started");
 	}
 
-	void stopRotate() {
+	public void stopRotate() {
 		pitchArrow.SetActive(false);
 		rollArrow.SetActive(false);
 		yawArrow.SetActive(false);
