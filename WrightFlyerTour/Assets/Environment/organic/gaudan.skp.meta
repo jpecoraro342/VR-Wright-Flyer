@@ -1,0 +1,947 @@
+fileFormatVersion: 2
+guid: b3ddcc7d75752ab4a9893f3230377178
+timeCreated: 1456098575
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000a3000000a4000000a5000000a6000000a7000000a8000000a9000000aa000000ab000000ac000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf000000c0000000c1000000c2000000c3000000c4000000c5000000c6000000c7000000c8000000c9000000ca000000cb000000cc000000cd000000ce000000cf000000d0000000d1000000d2000000d3000000d4000000d5000000d6000000d7000000d8000000d9000000da000000db000000dc000000dd000000de000000df000000e0000000e1000000e2000000e3000000e4000000e5000000e6000000e7000000e8000000e9000000ea000000eb000000ec000000ed000000ee000000ef000000f0000000f1000000f2000000f3000000f4000000f5000000f6000000f7000000f8000000f9000000fa000000fb000000fc000000fd000000fe000000ff000000000100000101000002010000030100000401000005010000060100000701000008010000090100000a0100000b0100000c0100000d0100000e0100000f010000100100001101000012010000130100001401000015010000160100001701000018010000190100001a0100001b0100001c0100001d0100001e0100001f010000200100002101000022010000230100002401000025010000260100002701000028010000290100002a0100002b0100002c0100002d0100002e0100002f010000300100003101000032010000330100003401000035010000360100003701000038010000390100003a0100003b0100003c0100003d0100003e0100003f010000400100004101000042010000430100004401000045010000460100004701000048010000490100004a0100004b0100004c0100004d0100004e0100004f010000500100005101000052010000530100005401000055010000560100005701000058010000590100005a0100005b0100005c0100005d0100005e0100005f010000600100006101000062010000630100006401000065010000660100006701000068010000690100006a0100006b0100006c0100006d0100006e0100006f010000700100007101000072010000730100007401000075010000760100007701000078010000790100007a0100007b0100007c0100007d0100007e0100007f010000800100008101000082010000830100008401000085010000860100008701000088010000890100008a0100008b0100008c0100008d0100008e0100008f010000900100009101000092010000930100009401000095010000960100009701000098010000990100009a0100009b0100009c0100009d0100009e0100009f010000a0010000a1010000
+  assetHash:
+    serializedVersion: 2
+    Hash: 1363815c37c00bd80ac86fc946cb54c3
+  longitude: -105.283
+  latitude: 40.017
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 0.3818826, y: 0.3376383, z: -1.4060271}
+      lookAt: {x: -0.46826154, y: -1.6422228, z: 24.192804}
+      up: {x: -0.002558083, y: 0.9970257, z: 0.07702687}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes:
+    - camera:
+        position: {x: -3.2360775, y: 0.2714896, z: -3.2651107}
+        lookAt: {x: 9.967753, y: -0.7870614, z: 18.74582}
+        up: {x: 0.021197004, y: 0.9991507, z: 0.035335638}
+        fov: 35
+        aspectRatio: 0
+        orthoSize: 1
+        isPerspective: 1
+      name: Home
+    - camera:
+        position: {x: 0.8730124, y: 0.05468793, z: 2.5847223}
+        lookAt: {x: -16.280909, y: 3.4707952, z: -15.653745}
+        up: {x: 0.09261738, y: 0.9908204, z: 0.09847306}
+        fov: 35
+        aspectRatio: 0
+        orthoSize: 1
+        isPerspective: 1
+      name: Page 2
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: fatgrass
+    100002: fatgrass 1
+    100004: fatgrass 10
+    100006: fatgrass 11
+    100008: fatgrass 12
+    100010: fatgrass 13
+    100012: fatgrass 14
+    100014: fatgrass 15
+    100016: fatgrass 16
+    100018: fatgrass 17
+    100020: fatgrass 2
+    100022: fatgrass 3
+    100024: fatgrass 4
+    100026: fatgrass 5
+    100028: fatgrass 6
+    100030: fatgrass 7
+    100032: fatgrass 8
+    100034: fatgrass 9
+    100036: //RootNode
+    100038: grass grup
+    100040: grass grup 1
+    100042: grass grup 10
+    100044: grass grup 11
+    100046: grass grup 12
+    100048: grass grup 13
+    100050: grass grup 14
+    100052: grass grup 15
+    100054: grass grup 16
+    100056: grass grup 17
+    100058: grass grup 18
+    100060: grass grup 19
+    100062: grass grup 2
+    100064: grass grup 20
+    100066: grass grup 21
+    100068: grass grup 3
+    100070: grass grup 4
+    100072: grass grup 5
+    100074: grass grup 6
+    100076: grass grup 7
+    100078: grass grup 8
+    100080: grass grup 9
+    100082: grassgrup
+    100084: largegrassblade
+    100086: largegrassblade 1
+    100088: largegrassblade 2
+    100090: largegrassblade 3
+    100092: largegrassblade 4
+    100094: largegrassblade 5
+    100096: small grass
+    100098: small grass 1
+    100100: small grass 10
+    100102: small grass 100
+    100104: small grass 101
+    100106: small grass 102
+    100108: small grass 103
+    100110: small grass 104
+    100112: small grass 105
+    100114: small grass 106
+    100116: small grass 107
+    100118: small grass 108
+    100120: small grass 109
+    100122: small grass 11
+    100124: small grass 110
+    100126: small grass 111
+    100128: small grass 112
+    100130: small grass 113
+    100132: small grass 114
+    100134: small grass 115
+    100136: small grass 116
+    100138: small grass 117
+    100140: small grass 118
+    100142: small grass 119
+    100144: small grass 12
+    100146: small grass 120
+    100148: small grass 121
+    100150: small grass 122
+    100152: small grass 123
+    100154: small grass 124
+    100156: small grass 125
+    100158: small grass 126
+    100160: small grass 127
+    100162: small grass 128
+    100164: small grass 129
+    100166: small grass 13
+    100168: small grass 130
+    100170: small grass 131
+    100172: small grass 132
+    100174: small grass 133
+    100176: small grass 134
+    100178: small grass 135
+    100180: small grass 136
+    100182: small grass 137
+    100184: small grass 138
+    100186: small grass 139
+    100188: small grass 14
+    100190: small grass 140
+    100192: small grass 141
+    100194: small grass 142
+    100196: small grass 143
+    100198: small grass 144
+    100200: small grass 145
+    100202: small grass 146
+    100204: small grass 147
+    100206: small grass 148
+    100208: small grass 149
+    100210: small grass 15
+    100212: small grass 150
+    100214: small grass 151
+    100216: small grass 152
+    100218: small grass 153
+    100220: small grass 154
+    100222: small grass 155
+    100224: small grass 156
+    100226: small grass 157
+    100228: small grass 158
+    100230: small grass 159
+    100232: small grass 16
+    100234: small grass 160
+    100236: small grass 161
+    100238: small grass 162
+    100240: small grass 163
+    100242: small grass 164
+    100244: small grass 165
+    100246: small grass 166
+    100248: small grass 167
+    100250: small grass 168
+    100252: small grass 169
+    100254: small grass 17
+    100256: small grass 170
+    100258: small grass 171
+    100260: small grass 172
+    100262: small grass 173
+    100264: small grass 174
+    100266: small grass 175
+    100268: small grass 18
+    100270: small grass 19
+    100272: small grass 2
+    100274: small grass 20
+    100276: small grass 21
+    100278: small grass 22
+    100280: small grass 23
+    100282: small grass 24
+    100284: small grass 25
+    100286: small grass 26
+    100288: small grass 27
+    100290: small grass 28
+    100292: small grass 29
+    100294: small grass 3
+    100296: small grass 30
+    100298: small grass 31
+    100300: small grass 32
+    100302: small grass 33
+    100304: small grass 34
+    100306: small grass 35
+    100308: small grass 36
+    100310: small grass 37
+    100312: small grass 38
+    100314: small grass 39
+    100316: small grass 4
+    100318: small grass 40
+    100320: small grass 41
+    100322: small grass 42
+    100324: small grass 43
+    100326: small grass 44
+    100328: small grass 45
+    100330: small grass 46
+    100332: small grass 47
+    100334: small grass 48
+    100336: small grass 49
+    100338: small grass 5
+    100340: small grass 50
+    100342: small grass 51
+    100344: small grass 52
+    100346: small grass 53
+    100348: small grass 54
+    100350: small grass 55
+    100352: small grass 56
+    100354: small grass 57
+    100356: small grass 58
+    100358: small grass 59
+    100360: small grass 6
+    100362: small grass 60
+    100364: small grass 61
+    100366: small grass 62
+    100368: small grass 63
+    100370: small grass 64
+    100372: small grass 65
+    100374: small grass 66
+    100376: small grass 67
+    100378: small grass 68
+    100380: small grass 69
+    100382: small grass 7
+    100384: small grass 70
+    100386: small grass 71
+    100388: small grass 72
+    100390: small grass 73
+    100392: small grass 74
+    100394: small grass 75
+    100396: small grass 76
+    100398: small grass 77
+    100400: small grass 78
+    100402: small grass 79
+    100404: small grass 8
+    100406: small grass 80
+    100408: small grass 81
+    100410: small grass 82
+    100412: small grass 83
+    100414: small grass 84
+    100416: small grass 85
+    100418: small grass 86
+    100420: small grass 87
+    100422: small grass 88
+    100424: small grass 89
+    100426: small grass 9
+    100428: small grass 90
+    100430: small grass 91
+    100432: small grass 92
+    100434: small grass 93
+    100436: small grass 94
+    100438: small grass 95
+    100440: small grass 96
+    100442: small grass 97
+    100444: small grass 98
+    100446: small grass 99
+    400000: fatgrass
+    400002: fatgrass 1
+    400004: fatgrass 10
+    400006: fatgrass 11
+    400008: fatgrass 12
+    400010: fatgrass 13
+    400012: fatgrass 14
+    400014: fatgrass 15
+    400016: fatgrass 16
+    400018: fatgrass 17
+    400020: fatgrass 2
+    400022: fatgrass 3
+    400024: fatgrass 4
+    400026: fatgrass 5
+    400028: fatgrass 6
+    400030: fatgrass 7
+    400032: fatgrass 8
+    400034: fatgrass 9
+    400036: //RootNode
+    400038: grass grup
+    400040: grass grup 1
+    400042: grass grup 10
+    400044: grass grup 11
+    400046: grass grup 12
+    400048: grass grup 13
+    400050: grass grup 14
+    400052: grass grup 15
+    400054: grass grup 16
+    400056: grass grup 17
+    400058: grass grup 18
+    400060: grass grup 19
+    400062: grass grup 2
+    400064: grass grup 20
+    400066: grass grup 21
+    400068: grass grup 3
+    400070: grass grup 4
+    400072: grass grup 5
+    400074: grass grup 6
+    400076: grass grup 7
+    400078: grass grup 8
+    400080: grass grup 9
+    400082: grassgrup
+    400084: largegrassblade
+    400086: largegrassblade 1
+    400088: largegrassblade 2
+    400090: largegrassblade 3
+    400092: largegrassblade 4
+    400094: largegrassblade 5
+    400096: small grass
+    400098: small grass 1
+    400100: small grass 10
+    400102: small grass 100
+    400104: small grass 101
+    400106: small grass 102
+    400108: small grass 103
+    400110: small grass 104
+    400112: small grass 105
+    400114: small grass 106
+    400116: small grass 107
+    400118: small grass 108
+    400120: small grass 109
+    400122: small grass 11
+    400124: small grass 110
+    400126: small grass 111
+    400128: small grass 112
+    400130: small grass 113
+    400132: small grass 114
+    400134: small grass 115
+    400136: small grass 116
+    400138: small grass 117
+    400140: small grass 118
+    400142: small grass 119
+    400144: small grass 12
+    400146: small grass 120
+    400148: small grass 121
+    400150: small grass 122
+    400152: small grass 123
+    400154: small grass 124
+    400156: small grass 125
+    400158: small grass 126
+    400160: small grass 127
+    400162: small grass 128
+    400164: small grass 129
+    400166: small grass 13
+    400168: small grass 130
+    400170: small grass 131
+    400172: small grass 132
+    400174: small grass 133
+    400176: small grass 134
+    400178: small grass 135
+    400180: small grass 136
+    400182: small grass 137
+    400184: small grass 138
+    400186: small grass 139
+    400188: small grass 14
+    400190: small grass 140
+    400192: small grass 141
+    400194: small grass 142
+    400196: small grass 143
+    400198: small grass 144
+    400200: small grass 145
+    400202: small grass 146
+    400204: small grass 147
+    400206: small grass 148
+    400208: small grass 149
+    400210: small grass 15
+    400212: small grass 150
+    400214: small grass 151
+    400216: small grass 152
+    400218: small grass 153
+    400220: small grass 154
+    400222: small grass 155
+    400224: small grass 156
+    400226: small grass 157
+    400228: small grass 158
+    400230: small grass 159
+    400232: small grass 16
+    400234: small grass 160
+    400236: small grass 161
+    400238: small grass 162
+    400240: small grass 163
+    400242: small grass 164
+    400244: small grass 165
+    400246: small grass 166
+    400248: small grass 167
+    400250: small grass 168
+    400252: small grass 169
+    400254: small grass 17
+    400256: small grass 170
+    400258: small grass 171
+    400260: small grass 172
+    400262: small grass 173
+    400264: small grass 174
+    400266: small grass 175
+    400268: small grass 18
+    400270: small grass 19
+    400272: small grass 2
+    400274: small grass 20
+    400276: small grass 21
+    400278: small grass 22
+    400280: small grass 23
+    400282: small grass 24
+    400284: small grass 25
+    400286: small grass 26
+    400288: small grass 27
+    400290: small grass 28
+    400292: small grass 29
+    400294: small grass 3
+    400296: small grass 30
+    400298: small grass 31
+    400300: small grass 32
+    400302: small grass 33
+    400304: small grass 34
+    400306: small grass 35
+    400308: small grass 36
+    400310: small grass 37
+    400312: small grass 38
+    400314: small grass 39
+    400316: small grass 4
+    400318: small grass 40
+    400320: small grass 41
+    400322: small grass 42
+    400324: small grass 43
+    400326: small grass 44
+    400328: small grass 45
+    400330: small grass 46
+    400332: small grass 47
+    400334: small grass 48
+    400336: small grass 49
+    400338: small grass 5
+    400340: small grass 50
+    400342: small grass 51
+    400344: small grass 52
+    400346: small grass 53
+    400348: small grass 54
+    400350: small grass 55
+    400352: small grass 56
+    400354: small grass 57
+    400356: small grass 58
+    400358: small grass 59
+    400360: small grass 6
+    400362: small grass 60
+    400364: small grass 61
+    400366: small grass 62
+    400368: small grass 63
+    400370: small grass 64
+    400372: small grass 65
+    400374: small grass 66
+    400376: small grass 67
+    400378: small grass 68
+    400380: small grass 69
+    400382: small grass 7
+    400384: small grass 70
+    400386: small grass 71
+    400388: small grass 72
+    400390: small grass 73
+    400392: small grass 74
+    400394: small grass 75
+    400396: small grass 76
+    400398: small grass 77
+    400400: small grass 78
+    400402: small grass 79
+    400404: small grass 8
+    400406: small grass 80
+    400408: small grass 81
+    400410: small grass 82
+    400412: small grass 83
+    400414: small grass 84
+    400416: small grass 85
+    400418: small grass 86
+    400420: small grass 87
+    400422: small grass 88
+    400424: small grass 89
+    400426: small grass 9
+    400428: small grass 90
+    400430: small grass 91
+    400432: small grass 92
+    400434: small grass 93
+    400436: small grass 94
+    400438: small grass 95
+    400440: small grass 96
+    400442: small grass 97
+    400444: small grass 98
+    400446: small grass 99
+    2300000: fatgrass
+    2300002: fatgrass 1
+    2300004: fatgrass 10
+    2300006: fatgrass 11
+    2300008: fatgrass 12
+    2300010: fatgrass 13
+    2300012: fatgrass 14
+    2300014: fatgrass 15
+    2300016: fatgrass 16
+    2300018: fatgrass 17
+    2300020: fatgrass 2
+    2300022: fatgrass 3
+    2300024: fatgrass 4
+    2300026: fatgrass 5
+    2300028: fatgrass 6
+    2300030: fatgrass 7
+    2300032: fatgrass 8
+    2300034: fatgrass 9
+    2300036: small grass
+    2300038: small grass 1
+    2300040: small grass 10
+    2300042: small grass 100
+    2300044: small grass 101
+    2300046: small grass 102
+    2300048: small grass 103
+    2300050: small grass 104
+    2300052: small grass 105
+    2300054: small grass 106
+    2300056: small grass 107
+    2300058: small grass 108
+    2300060: small grass 109
+    2300062: small grass 11
+    2300064: small grass 110
+    2300066: small grass 111
+    2300068: small grass 112
+    2300070: small grass 113
+    2300072: small grass 114
+    2300074: small grass 115
+    2300076: small grass 116
+    2300078: small grass 117
+    2300080: small grass 118
+    2300082: small grass 119
+    2300084: small grass 12
+    2300086: small grass 120
+    2300088: small grass 121
+    2300090: small grass 122
+    2300092: small grass 123
+    2300094: small grass 124
+    2300096: small grass 125
+    2300098: small grass 126
+    2300100: small grass 127
+    2300102: small grass 128
+    2300104: small grass 129
+    2300106: small grass 13
+    2300108: small grass 130
+    2300110: small grass 131
+    2300112: small grass 132
+    2300114: small grass 133
+    2300116: small grass 134
+    2300118: small grass 135
+    2300120: small grass 136
+    2300122: small grass 137
+    2300124: small grass 138
+    2300126: small grass 139
+    2300128: small grass 14
+    2300130: small grass 140
+    2300132: small grass 141
+    2300134: small grass 142
+    2300136: small grass 143
+    2300138: small grass 144
+    2300140: small grass 145
+    2300142: small grass 146
+    2300144: small grass 147
+    2300146: small grass 148
+    2300148: small grass 149
+    2300150: small grass 15
+    2300152: small grass 150
+    2300154: small grass 151
+    2300156: small grass 152
+    2300158: small grass 153
+    2300160: small grass 154
+    2300162: small grass 155
+    2300164: small grass 156
+    2300166: small grass 157
+    2300168: small grass 158
+    2300170: small grass 159
+    2300172: small grass 16
+    2300174: small grass 160
+    2300176: small grass 161
+    2300178: small grass 162
+    2300180: small grass 163
+    2300182: small grass 164
+    2300184: small grass 165
+    2300186: small grass 166
+    2300188: small grass 167
+    2300190: small grass 168
+    2300192: small grass 169
+    2300194: small grass 17
+    2300196: small grass 170
+    2300198: small grass 171
+    2300200: small grass 172
+    2300202: small grass 173
+    2300204: small grass 174
+    2300206: small grass 175
+    2300208: small grass 18
+    2300210: small grass 19
+    2300212: small grass 2
+    2300214: small grass 20
+    2300216: small grass 21
+    2300218: small grass 22
+    2300220: small grass 23
+    2300222: small grass 24
+    2300224: small grass 25
+    2300226: small grass 26
+    2300228: small grass 27
+    2300230: small grass 28
+    2300232: small grass 29
+    2300234: small grass 3
+    2300236: small grass 30
+    2300238: small grass 31
+    2300240: small grass 32
+    2300242: small grass 33
+    2300244: small grass 34
+    2300246: small grass 35
+    2300248: small grass 36
+    2300250: small grass 37
+    2300252: small grass 38
+    2300254: small grass 39
+    2300256: small grass 4
+    2300258: small grass 40
+    2300260: small grass 41
+    2300262: small grass 42
+    2300264: small grass 43
+    2300266: small grass 44
+    2300268: small grass 45
+    2300270: small grass 46
+    2300272: small grass 47
+    2300274: small grass 48
+    2300276: small grass 49
+    2300278: small grass 5
+    2300280: small grass 50
+    2300282: small grass 51
+    2300284: small grass 52
+    2300286: small grass 53
+    2300288: small grass 54
+    2300290: small grass 55
+    2300292: small grass 56
+    2300294: small grass 57
+    2300296: small grass 58
+    2300298: small grass 59
+    2300300: small grass 6
+    2300302: small grass 60
+    2300304: small grass 61
+    2300306: small grass 62
+    2300308: small grass 63
+    2300310: small grass 64
+    2300312: small grass 65
+    2300314: small grass 66
+    2300316: small grass 67
+    2300318: small grass 68
+    2300320: small grass 69
+    2300322: small grass 7
+    2300324: small grass 70
+    2300326: small grass 71
+    2300328: small grass 72
+    2300330: small grass 73
+    2300332: small grass 74
+    2300334: small grass 75
+    2300336: small grass 76
+    2300338: small grass 77
+    2300340: small grass 78
+    2300342: small grass 79
+    2300344: small grass 8
+    2300346: small grass 80
+    2300348: small grass 81
+    2300350: small grass 82
+    2300352: small grass 83
+    2300354: small grass 84
+    2300356: small grass 85
+    2300358: small grass 86
+    2300360: small grass 87
+    2300362: small grass 88
+    2300364: small grass 89
+    2300366: small grass 9
+    2300368: small grass 90
+    2300370: small grass 91
+    2300372: small grass 92
+    2300374: small grass 93
+    2300376: small grass 94
+    2300378: small grass 95
+    2300380: small grass 96
+    2300382: small grass 97
+    2300384: small grass 98
+    2300386: small grass 99
+    3300000: fatgrass
+    3300002: fatgrass 1
+    3300004: fatgrass 10
+    3300006: fatgrass 11
+    3300008: fatgrass 12
+    3300010: fatgrass 13
+    3300012: fatgrass 14
+    3300014: fatgrass 15
+    3300016: fatgrass 16
+    3300018: fatgrass 17
+    3300020: fatgrass 2
+    3300022: fatgrass 3
+    3300024: fatgrass 4
+    3300026: fatgrass 5
+    3300028: fatgrass 6
+    3300030: fatgrass 7
+    3300032: fatgrass 8
+    3300034: fatgrass 9
+    3300036: small grass
+    3300038: small grass 1
+    3300040: small grass 10
+    3300042: small grass 100
+    3300044: small grass 101
+    3300046: small grass 102
+    3300048: small grass 103
+    3300050: small grass 104
+    3300052: small grass 105
+    3300054: small grass 106
+    3300056: small grass 107
+    3300058: small grass 108
+    3300060: small grass 109
+    3300062: small grass 11
+    3300064: small grass 110
+    3300066: small grass 111
+    3300068: small grass 112
+    3300070: small grass 113
+    3300072: small grass 114
+    3300074: small grass 115
+    3300076: small grass 116
+    3300078: small grass 117
+    3300080: small grass 118
+    3300082: small grass 119
+    3300084: small grass 12
+    3300086: small grass 120
+    3300088: small grass 121
+    3300090: small grass 122
+    3300092: small grass 123
+    3300094: small grass 124
+    3300096: small grass 125
+    3300098: small grass 126
+    3300100: small grass 127
+    3300102: small grass 128
+    3300104: small grass 129
+    3300106: small grass 13
+    3300108: small grass 130
+    3300110: small grass 131
+    3300112: small grass 132
+    3300114: small grass 133
+    3300116: small grass 134
+    3300118: small grass 135
+    3300120: small grass 136
+    3300122: small grass 137
+    3300124: small grass 138
+    3300126: small grass 139
+    3300128: small grass 14
+    3300130: small grass 140
+    3300132: small grass 141
+    3300134: small grass 142
+    3300136: small grass 143
+    3300138: small grass 144
+    3300140: small grass 145
+    3300142: small grass 146
+    3300144: small grass 147
+    3300146: small grass 148
+    3300148: small grass 149
+    3300150: small grass 15
+    3300152: small grass 150
+    3300154: small grass 151
+    3300156: small grass 152
+    3300158: small grass 153
+    3300160: small grass 154
+    3300162: small grass 155
+    3300164: small grass 156
+    3300166: small grass 157
+    3300168: small grass 158
+    3300170: small grass 159
+    3300172: small grass 16
+    3300174: small grass 160
+    3300176: small grass 161
+    3300178: small grass 162
+    3300180: small grass 163
+    3300182: small grass 164
+    3300184: small grass 165
+    3300186: small grass 166
+    3300188: small grass 167
+    3300190: small grass 168
+    3300192: small grass 169
+    3300194: small grass 17
+    3300196: small grass 170
+    3300198: small grass 171
+    3300200: small grass 172
+    3300202: small grass 173
+    3300204: small grass 174
+    3300206: small grass 175
+    3300208: small grass 18
+    3300210: small grass 19
+    3300212: small grass 2
+    3300214: small grass 20
+    3300216: small grass 21
+    3300218: small grass 22
+    3300220: small grass 23
+    3300222: small grass 24
+    3300224: small grass 25
+    3300226: small grass 26
+    3300228: small grass 27
+    3300230: small grass 28
+    3300232: small grass 29
+    3300234: small grass 3
+    3300236: small grass 30
+    3300238: small grass 31
+    3300240: small grass 32
+    3300242: small grass 33
+    3300244: small grass 34
+    3300246: small grass 35
+    3300248: small grass 36
+    3300250: small grass 37
+    3300252: small grass 38
+    3300254: small grass 39
+    3300256: small grass 4
+    3300258: small grass 40
+    3300260: small grass 41
+    3300262: small grass 42
+    3300264: small grass 43
+    3300266: small grass 44
+    3300268: small grass 45
+    3300270: small grass 46
+    3300272: small grass 47
+    3300274: small grass 48
+    3300276: small grass 49
+    3300278: small grass 5
+    3300280: small grass 50
+    3300282: small grass 51
+    3300284: small grass 52
+    3300286: small grass 53
+    3300288: small grass 54
+    3300290: small grass 55
+    3300292: small grass 56
+    3300294: small grass 57
+    3300296: small grass 58
+    3300298: small grass 59
+    3300300: small grass 6
+    3300302: small grass 60
+    3300304: small grass 61
+    3300306: small grass 62
+    3300308: small grass 63
+    3300310: small grass 64
+    3300312: small grass 65
+    3300314: small grass 66
+    3300316: small grass 67
+    3300318: small grass 68
+    3300320: small grass 69
+    3300322: small grass 7
+    3300324: small grass 70
+    3300326: small grass 71
+    3300328: small grass 72
+    3300330: small grass 73
+    3300332: small grass 74
+    3300334: small grass 75
+    3300336: small grass 76
+    3300338: small grass 77
+    3300340: small grass 78
+    3300342: small grass 79
+    3300344: small grass 8
+    3300346: small grass 80
+    3300348: small grass 81
+    3300350: small grass 82
+    3300352: small grass 83
+    3300354: small grass 84
+    3300356: small grass 85
+    3300358: small grass 86
+    3300360: small grass 87
+    3300362: small grass 88
+    3300364: small grass 89
+    3300366: small grass 9
+    3300368: small grass 90
+    3300370: small grass 91
+    3300372: small grass 92
+    3300374: small grass 93
+    3300376: small grass 94
+    3300378: small grass 95
+    3300380: small grass 96
+    3300382: small grass 97
+    3300384: small grass 98
+    3300386: small grass 99
+    4300000: Mesh fatgrass
+    4300002: Mesh small grass
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

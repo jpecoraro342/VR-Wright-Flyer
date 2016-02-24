@@ -76,7 +76,7 @@ public class FrontRudderController : MonoBehaviour {
 				transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
                 topRot = true;
 			}
-            else if (transform.localEulerAngles.x >= 360 - objOffsetFrontRud - 10 || transform.localEulerAngles.x <= initialObjPositionX + objOffsetFrontRud)
+            else if (transform.localEulerAngles.x >= 360 - objOffsetFrontRud+ - 10 || transform.localEulerAngles.x <= initialObjPositionX + objOffsetFrontRud)
             {
                 transform.Rotate(-speed, 0, 0);
                 lever.transform.Rotate(-speed, 0, 0);

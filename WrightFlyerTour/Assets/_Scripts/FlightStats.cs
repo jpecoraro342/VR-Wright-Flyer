@@ -25,6 +25,7 @@ public class FlightStats : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		spinMeter();
 		var distanceSinceLastUpdate = (transform.position - previousLocation).magnitude * transformToFeetConversionFactor;
 
 		setDistance(distance + distanceSinceLastUpdate);
@@ -68,6 +69,13 @@ public class FlightStats : MonoBehaviour {
 		else {
 			Debug.Log("Air Time: " + flightTime.ToString("n2") + " sec");
 		}
+	}
+
+	void spinMeter() {
+		GameObject go = GameObject.Find("Wind_meter");
+		float rotSpeed = -2.5F - (speed / 10);
+		rotSpeed = 1.4F * rotSpeed;  // Scale it a bit
+		go.transform.Rotate(0, 0, rotSpeed);
 	}
 
 }

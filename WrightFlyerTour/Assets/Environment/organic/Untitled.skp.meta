@@ -1,0 +1,929 @@
+fileFormatVersion: 2
+guid: 2812770ed75ff3a4a8ab9318680c30a1
+timeCreated: 1456098711
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000a3000000a4000000a5000000a6000000a7000000a8000000a9000000aa000000ab000000ac000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf000000c0000000c1000000c2000000c3000000c4000000c5000000c6000000c7000000c8000000c9000000ca000000cb000000cc000000cd000000ce000000cf000000d0000000d1000000d2000000d3000000d4000000d5000000d6000000d7000000d8000000d9000000da000000db000000dc000000dd000000de000000df000000e0000000e1000000e2000000e3000000e4000000e5000000e6000000e7000000e8000000e9000000ea000000eb000000ec000000ed000000ee000000ef000000f0000000f1000000f2000000f3000000f4000000f5000000f6000000f7000000f8000000f9000000fa000000fb000000fc000000fd000000fe000000ff000000000100000101000002010000030100000401000005010000060100000701000008010000090100000a0100000b0100000c0100000d0100000e0100000f010000100100001101000012010000130100001401000015010000160100001701000018010000190100001a0100001b0100001c0100001d0100001e0100001f010000200100002101000022010000230100002401000025010000260100002701000028010000290100002a0100002b0100002c0100002d0100002e0100002f010000300100003101000032010000330100003401000035010000360100003701000038010000390100003a0100003b0100003c0100003d0100003e0100003f010000400100004101000042010000430100004401000045010000460100004701000048010000490100004a0100004b0100004c0100004d0100004e0100004f010000500100005101000052010000530100005401000055010000560100005701000058010000590100005a0100005b0100005c0100005d0100005e0100005f010000600100006101000062010000630100006401000065010000660100006701000068010000690100006a0100006b0100006c0100006d0100006e0100006f010000700100007101000072010000730100007401000075010000760100007701000078010000790100007a0100007b0100007c0100007d0100007e0100007f010000800100008101000082010000830100008401000085010000860100008701000088010000890100008a0100008b0100008c0100008d0100008e0100008f010000900100009101000092010000930100009401000095010000960100009701000098010000990100009a0100009b0100009c0100009d0100009e010000
+  assetHash:
+    serializedVersion: 2
+    Hash: c23ae10df4e52e8ce95eac6e683c9030
+  longitude: -105.283
+  latitude: 40.017
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 4.12136, y: 3.8879936, z: 47.997902}
+      lookAt: {x: -24990.371, y: -2622.8604, z: 4036.1902}
+      up: {x: -0.10193634, y: 0.99465793, z: 0.01626525}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Component#7
+    100002: Component#7 1
+    100004: Component#7 10
+    100006: Component#7 11
+    100008: Component#7 12
+    100010: Component#7 13
+    100012: Component#7 14
+    100014: Component#7 15
+    100016: Component#7 16
+    100018: Component#7 17
+    100020: Component#7 18
+    100022: Component#7 19
+    100024: Component#7 2
+    100026: Component#7 20
+    100028: Component#7 21
+    100030: Component#7 22
+    100032: Component#7 23
+    100034: Component#7 24
+    100036: Component#7 25
+    100038: Component#7 26
+    100040: Component#7 27
+    100042: Component#7 28
+    100044: Component#7 29
+    100046: Component#7 3
+    100048: Component#7 30
+    100050: Component#7 31
+    100052: Component#7 32
+    100054: Component#7 33
+    100056: Component#7 34
+    100058: Component#7 35
+    100060: Component#7 36
+    100062: Component#7 37
+    100064: Component#7 38
+    100066: Component#7 39
+    100068: Component#7 4
+    100070: Component#7 40
+    100072: Component#7 41
+    100074: Component#7 42
+    100076: Component#7 43
+    100078: Component#7 44
+    100080: Component#7 45
+    100082: Component#7 46
+    100084: Component#7 47
+    100086: Component#7 48
+    100088: Component#7 49
+    100090: Component#7 5
+    100092: Component#7 50
+    100094: Component#7 51
+    100096: Component#7 52
+    100098: Component#7 53
+    100100: Component#7 54
+    100102: Component#7 55
+    100104: Component#7 56
+    100106: Component#7 57
+    100108: Component#7 58
+    100110: Component#7 59
+    100112: Component#7 6
+    100114: Component#7 60
+    100116: Component#7 61
+    100118: Component#7 62
+    100120: Component#7 63
+    100122: Component#7 64
+    100124: Component#7 65
+    100126: Component#7 66
+    100128: Component#7 67
+    100130: Component#7 68
+    100132: Component#7 69
+    100134: Component#7 7
+    100136: Component#7 70
+    100138: Component#7 71
+    100140: Component#7 72
+    100142: Component#7 73
+    100144: Component#7 74
+    100146: Component#7 75
+    100148: Component#7 76
+    100150: Component#7 77
+    100152: Component#7 78
+    100154: Component#7 79
+    100156: Component#7 8
+    100158: Component#7 80
+    100160: Component#7 81
+    100162: Component#7 82
+    100164: Component#7 83
+    100166: Component#7 84
+    100168: Component#7 85
+    100170: Component#7 86
+    100172: Component#7 9
+    100174: Component#8
+    100176: Group#17
+    100178: Group#17 1
+    100180: Improved Smart Tree
+    100182: Leaf Bunch#1
+    100184: Leaf Bunch#1 1
+    100186: Leaf Bunch#1 10
+    100188: Leaf Bunch#1 11
+    100190: Leaf Bunch#1 12
+    100192: Leaf Bunch#1 13
+    100194: Leaf Bunch#1 14
+    100196: Leaf Bunch#1 15
+    100198: Leaf Bunch#1 16
+    100200: Leaf Bunch#1 17
+    100202: Leaf Bunch#1 18
+    100204: Leaf Bunch#1 19
+    100206: Leaf Bunch#1 2
+    100208: Leaf Bunch#1 20
+    100210: Leaf Bunch#1 21
+    100212: Leaf Bunch#1 22
+    100214: Leaf Bunch#1 23
+    100216: Leaf Bunch#1 24
+    100218: Leaf Bunch#1 25
+    100220: Leaf Bunch#1 26
+    100222: Leaf Bunch#1 27
+    100224: Leaf Bunch#1 28
+    100226: Leaf Bunch#1 29
+    100228: Leaf Bunch#1 3
+    100230: Leaf Bunch#1 30
+    100232: Leaf Bunch#1 31
+    100234: Leaf Bunch#1 32
+    100236: Leaf Bunch#1 33
+    100238: Leaf Bunch#1 34
+    100240: Leaf Bunch#1 35
+    100242: Leaf Bunch#1 36
+    100244: Leaf Bunch#1 37
+    100246: Leaf Bunch#1 38
+    100248: Leaf Bunch#1 39
+    100250: Leaf Bunch#1 4
+    100252: Leaf Bunch#1 40
+    100254: Leaf Bunch#1 41
+    100256: Leaf Bunch#1 42
+    100258: Leaf Bunch#1 43
+    100260: Leaf Bunch#1 44
+    100262: Leaf Bunch#1 45
+    100264: Leaf Bunch#1 46
+    100266: Leaf Bunch#1 47
+    100268: Leaf Bunch#1 48
+    100270: Leaf Bunch#1 49
+    100272: Leaf Bunch#1 5
+    100274: Leaf Bunch#1 50
+    100276: Leaf Bunch#1 51
+    100278: Leaf Bunch#1 52
+    100280: Leaf Bunch#1 53
+    100282: Leaf Bunch#1 54
+    100284: Leaf Bunch#1 55
+    100286: Leaf Bunch#1 56
+    100288: Leaf Bunch#1 57
+    100290: Leaf Bunch#1 58
+    100292: Leaf Bunch#1 59
+    100294: Leaf Bunch#1 6
+    100296: Leaf Bunch#1 60
+    100298: Leaf Bunch#1 61
+    100300: Leaf Bunch#1 62
+    100302: Leaf Bunch#1 63
+    100304: Leaf Bunch#1 64
+    100306: Leaf Bunch#1 65
+    100308: Leaf Bunch#1 66
+    100310: Leaf Bunch#1 67
+    100312: Leaf Bunch#1 68
+    100314: Leaf Bunch#1 69
+    100316: Leaf Bunch#1 7
+    100318: Leaf Bunch#1 70
+    100320: Leaf Bunch#1 71
+    100322: Leaf Bunch#1 72
+    100324: Leaf Bunch#1 73
+    100326: Leaf Bunch#1 74
+    100328: Leaf Bunch#1 75
+    100330: Leaf Bunch#1 76
+    100332: Leaf Bunch#1 77
+    100334: Leaf Bunch#1 78
+    100336: Leaf Bunch#1 79
+    100338: Leaf Bunch#1 8
+    100340: Leaf Bunch#1 80
+    100342: Leaf Bunch#1 81
+    100344: Leaf Bunch#1 9
+    100346: ske13
+    100348: ske16
+    100350: ske5
+    100352: Smart Tree
+    100354: 'Smart Tree: 1'
+    100356: trunk#1
+    100358: trunk#2
+    100360: trunk#2 1
+    100362: trunk#2 10
+    100364: trunk#2 11
+    100366: trunk#2 12
+    100368: trunk#2 13
+    100370: trunk#2 14
+    100372: trunk#2 2
+    100374: trunk#2 3
+    100376: trunk#2 4
+    100378: trunk#2 5
+    100380: trunk#2 6
+    100382: trunk#2 7
+    100384: trunk#2 8
+    100386: trunk#2 9
+    100388: trunk#3
+    100390: trunk#4
+    100392: trunk#4 1
+    100394: trunk#4 10
+    100396: trunk#4 11
+    100398: trunk#4 12
+    100400: trunk#4 13
+    100402: trunk#4 14
+    100404: trunk#4 2
+    100406: trunk#4 3
+    100408: trunk#4 4
+    100410: trunk#4 5
+    100412: trunk#4 6
+    100414: trunk#4 7
+    100416: trunk#4 8
+    100418: trunk#4 9
+    100420: //RootNode
+    400000: Component#7
+    400002: Component#7 1
+    400004: Component#7 10
+    400006: Component#7 11
+    400008: Component#7 12
+    400010: Component#7 13
+    400012: Component#7 14
+    400014: Component#7 15
+    400016: Component#7 16
+    400018: Component#7 17
+    400020: Component#7 18
+    400022: Component#7 19
+    400024: Component#7 2
+    400026: Component#7 20
+    400028: Component#7 21
+    400030: Component#7 22
+    400032: Component#7 23
+    400034: Component#7 24
+    400036: Component#7 25
+    400038: Component#7 26
+    400040: Component#7 27
+    400042: Component#7 28
+    400044: Component#7 29
+    400046: Component#7 3
+    400048: Component#7 30
+    400050: Component#7 31
+    400052: Component#7 32
+    400054: Component#7 33
+    400056: Component#7 34
+    400058: Component#7 35
+    400060: Component#7 36
+    400062: Component#7 37
+    400064: Component#7 38
+    400066: Component#7 39
+    400068: Component#7 4
+    400070: Component#7 40
+    400072: Component#7 41
+    400074: Component#7 42
+    400076: Component#7 43
+    400078: Component#7 44
+    400080: Component#7 45
+    400082: Component#7 46
+    400084: Component#7 47
+    400086: Component#7 48
+    400088: Component#7 49
+    400090: Component#7 5
+    400092: Component#7 50
+    400094: Component#7 51
+    400096: Component#7 52
+    400098: Component#7 53
+    400100: Component#7 54
+    400102: Component#7 55
+    400104: Component#7 56
+    400106: Component#7 57
+    400108: Component#7 58
+    400110: Component#7 59
+    400112: Component#7 6
+    400114: Component#7 60
+    400116: Component#7 61
+    400118: Component#7 62
+    400120: Component#7 63
+    400122: Component#7 64
+    400124: Component#7 65
+    400126: Component#7 66
+    400128: Component#7 67
+    400130: Component#7 68
+    400132: Component#7 69
+    400134: Component#7 7
+    400136: Component#7 70
+    400138: Component#7 71
+    400140: Component#7 72
+    400142: Component#7 73
+    400144: Component#7 74
+    400146: Component#7 75
+    400148: Component#7 76
+    400150: Component#7 77
+    400152: Component#7 78
+    400154: Component#7 79
+    400156: Component#7 8
+    400158: Component#7 80
+    400160: Component#7 81
+    400162: Component#7 82
+    400164: Component#7 83
+    400166: Component#7 84
+    400168: Component#7 85
+    400170: Component#7 86
+    400172: Component#7 9
+    400174: Component#8
+    400176: Group#17
+    400178: Group#17 1
+    400180: Improved Smart Tree
+    400182: Leaf Bunch#1
+    400184: Leaf Bunch#1 1
+    400186: Leaf Bunch#1 10
+    400188: Leaf Bunch#1 11
+    400190: Leaf Bunch#1 12
+    400192: Leaf Bunch#1 13
+    400194: Leaf Bunch#1 14
+    400196: Leaf Bunch#1 15
+    400198: Leaf Bunch#1 16
+    400200: Leaf Bunch#1 17
+    400202: Leaf Bunch#1 18
+    400204: Leaf Bunch#1 19
+    400206: Leaf Bunch#1 2
+    400208: Leaf Bunch#1 20
+    400210: Leaf Bunch#1 21
+    400212: Leaf Bunch#1 22
+    400214: Leaf Bunch#1 23
+    400216: Leaf Bunch#1 24
+    400218: Leaf Bunch#1 25
+    400220: Leaf Bunch#1 26
+    400222: Leaf Bunch#1 27
+    400224: Leaf Bunch#1 28
+    400226: Leaf Bunch#1 29
+    400228: Leaf Bunch#1 3
+    400230: Leaf Bunch#1 30
+    400232: Leaf Bunch#1 31
+    400234: Leaf Bunch#1 32
+    400236: Leaf Bunch#1 33
+    400238: Leaf Bunch#1 34
+    400240: Leaf Bunch#1 35
+    400242: Leaf Bunch#1 36
+    400244: Leaf Bunch#1 37
+    400246: Leaf Bunch#1 38
+    400248: Leaf Bunch#1 39
+    400250: Leaf Bunch#1 4
+    400252: Leaf Bunch#1 40
+    400254: Leaf Bunch#1 41
+    400256: Leaf Bunch#1 42
+    400258: Leaf Bunch#1 43
+    400260: Leaf Bunch#1 44
+    400262: Leaf Bunch#1 45
+    400264: Leaf Bunch#1 46
+    400266: Leaf Bunch#1 47
+    400268: Leaf Bunch#1 48
+    400270: Leaf Bunch#1 49
+    400272: Leaf Bunch#1 5
+    400274: Leaf Bunch#1 50
+    400276: Leaf Bunch#1 51
+    400278: Leaf Bunch#1 52
+    400280: Leaf Bunch#1 53
+    400282: Leaf Bunch#1 54
+    400284: Leaf Bunch#1 55
+    400286: Leaf Bunch#1 56
+    400288: Leaf Bunch#1 57
+    400290: Leaf Bunch#1 58
+    400292: Leaf Bunch#1 59
+    400294: Leaf Bunch#1 6
+    400296: Leaf Bunch#1 60
+    400298: Leaf Bunch#1 61
+    400300: Leaf Bunch#1 62
+    400302: Leaf Bunch#1 63
+    400304: Leaf Bunch#1 64
+    400306: Leaf Bunch#1 65
+    400308: Leaf Bunch#1 66
+    400310: Leaf Bunch#1 67
+    400312: Leaf Bunch#1 68
+    400314: Leaf Bunch#1 69
+    400316: Leaf Bunch#1 7
+    400318: Leaf Bunch#1 70
+    400320: Leaf Bunch#1 71
+    400322: Leaf Bunch#1 72
+    400324: Leaf Bunch#1 73
+    400326: Leaf Bunch#1 74
+    400328: Leaf Bunch#1 75
+    400330: Leaf Bunch#1 76
+    400332: Leaf Bunch#1 77
+    400334: Leaf Bunch#1 78
+    400336: Leaf Bunch#1 79
+    400338: Leaf Bunch#1 8
+    400340: Leaf Bunch#1 80
+    400342: Leaf Bunch#1 81
+    400344: Leaf Bunch#1 9
+    400346: ske13
+    400348: ske16
+    400350: ske5
+    400352: Smart Tree
+    400354: 'Smart Tree: 1'
+    400356: trunk#1
+    400358: trunk#2
+    400360: trunk#2 1
+    400362: trunk#2 10
+    400364: trunk#2 11
+    400366: trunk#2 12
+    400368: trunk#2 13
+    400370: trunk#2 14
+    400372: trunk#2 2
+    400374: trunk#2 3
+    400376: trunk#2 4
+    400378: trunk#2 5
+    400380: trunk#2 6
+    400382: trunk#2 7
+    400384: trunk#2 8
+    400386: trunk#2 9
+    400388: trunk#3
+    400390: trunk#4
+    400392: trunk#4 1
+    400394: trunk#4 10
+    400396: trunk#4 11
+    400398: trunk#4 12
+    400400: trunk#4 13
+    400402: trunk#4 14
+    400404: trunk#4 2
+    400406: trunk#4 3
+    400408: trunk#4 4
+    400410: trunk#4 5
+    400412: trunk#4 6
+    400414: trunk#4 7
+    400416: trunk#4 8
+    400418: trunk#4 9
+    400420: //RootNode
+    2300000: Component#7
+    2300002: Component#7 1
+    2300004: Component#7 10
+    2300006: Component#7 11
+    2300008: Component#7 12
+    2300010: Component#7 13
+    2300012: Component#7 14
+    2300014: Component#7 15
+    2300016: Component#7 16
+    2300018: Component#7 17
+    2300020: Component#7 18
+    2300022: Component#7 19
+    2300024: Component#7 2
+    2300026: Component#7 20
+    2300028: Component#7 21
+    2300030: Component#7 22
+    2300032: Component#7 23
+    2300034: Component#7 24
+    2300036: Component#7 25
+    2300038: Component#7 26
+    2300040: Component#7 27
+    2300042: Component#7 28
+    2300044: Component#7 29
+    2300046: Component#7 3
+    2300048: Component#7 30
+    2300050: Component#7 31
+    2300052: Component#7 32
+    2300054: Component#7 33
+    2300056: Component#7 34
+    2300058: Component#7 35
+    2300060: Component#7 36
+    2300062: Component#7 37
+    2300064: Component#7 38
+    2300066: Component#7 39
+    2300068: Component#7 4
+    2300070: Component#7 40
+    2300072: Component#7 41
+    2300074: Component#7 42
+    2300076: Component#7 43
+    2300078: Component#7 44
+    2300080: Component#7 45
+    2300082: Component#7 46
+    2300084: Component#7 47
+    2300086: Component#7 48
+    2300088: Component#7 49
+    2300090: Component#7 5
+    2300092: Component#7 50
+    2300094: Component#7 51
+    2300096: Component#7 52
+    2300098: Component#7 53
+    2300100: Component#7 54
+    2300102: Component#7 55
+    2300104: Component#7 56
+    2300106: Component#7 57
+    2300108: Component#7 58
+    2300110: Component#7 59
+    2300112: Component#7 6
+    2300114: Component#7 60
+    2300116: Component#7 61
+    2300118: Component#7 62
+    2300120: Component#7 63
+    2300122: Component#7 64
+    2300124: Component#7 65
+    2300126: Component#7 66
+    2300128: Component#7 67
+    2300130: Component#7 68
+    2300132: Component#7 69
+    2300134: Component#7 7
+    2300136: Component#7 70
+    2300138: Component#7 71
+    2300140: Component#7 72
+    2300142: Component#7 73
+    2300144: Component#7 74
+    2300146: Component#7 75
+    2300148: Component#7 76
+    2300150: Component#7 77
+    2300152: Component#7 78
+    2300154: Component#7 79
+    2300156: Component#7 8
+    2300158: Component#7 80
+    2300160: Component#7 81
+    2300162: Component#7 82
+    2300164: Component#7 83
+    2300166: Component#7 84
+    2300168: Component#7 85
+    2300170: Component#7 86
+    2300172: Component#7 9
+    2300174: Group#17
+    2300176: Group#17 1
+    2300178: Leaf Bunch#1
+    2300180: Leaf Bunch#1 1
+    2300182: Leaf Bunch#1 10
+    2300184: Leaf Bunch#1 11
+    2300186: Leaf Bunch#1 12
+    2300188: Leaf Bunch#1 13
+    2300190: Leaf Bunch#1 14
+    2300192: Leaf Bunch#1 15
+    2300194: Leaf Bunch#1 16
+    2300196: Leaf Bunch#1 17
+    2300198: Leaf Bunch#1 18
+    2300200: Leaf Bunch#1 19
+    2300202: Leaf Bunch#1 2
+    2300204: Leaf Bunch#1 20
+    2300206: Leaf Bunch#1 21
+    2300208: Leaf Bunch#1 22
+    2300210: Leaf Bunch#1 23
+    2300212: Leaf Bunch#1 24
+    2300214: Leaf Bunch#1 25
+    2300216: Leaf Bunch#1 26
+    2300218: Leaf Bunch#1 27
+    2300220: Leaf Bunch#1 28
+    2300222: Leaf Bunch#1 29
+    2300224: Leaf Bunch#1 3
+    2300226: Leaf Bunch#1 30
+    2300228: Leaf Bunch#1 31
+    2300230: Leaf Bunch#1 32
+    2300232: Leaf Bunch#1 33
+    2300234: Leaf Bunch#1 34
+    2300236: Leaf Bunch#1 35
+    2300238: Leaf Bunch#1 36
+    2300240: Leaf Bunch#1 37
+    2300242: Leaf Bunch#1 38
+    2300244: Leaf Bunch#1 39
+    2300246: Leaf Bunch#1 4
+    2300248: Leaf Bunch#1 40
+    2300250: Leaf Bunch#1 41
+    2300252: Leaf Bunch#1 42
+    2300254: Leaf Bunch#1 43
+    2300256: Leaf Bunch#1 44
+    2300258: Leaf Bunch#1 45
+    2300260: Leaf Bunch#1 46
+    2300262: Leaf Bunch#1 47
+    2300264: Leaf Bunch#1 48
+    2300266: Leaf Bunch#1 49
+    2300268: Leaf Bunch#1 5
+    2300270: Leaf Bunch#1 50
+    2300272: Leaf Bunch#1 51
+    2300274: Leaf Bunch#1 52
+    2300276: Leaf Bunch#1 53
+    2300278: Leaf Bunch#1 54
+    2300280: Leaf Bunch#1 55
+    2300282: Leaf Bunch#1 56
+    2300284: Leaf Bunch#1 57
+    2300286: Leaf Bunch#1 58
+    2300288: Leaf Bunch#1 59
+    2300290: Leaf Bunch#1 6
+    2300292: Leaf Bunch#1 60
+    2300294: Leaf Bunch#1 61
+    2300296: Leaf Bunch#1 62
+    2300298: Leaf Bunch#1 63
+    2300300: Leaf Bunch#1 64
+    2300302: Leaf Bunch#1 65
+    2300304: Leaf Bunch#1 66
+    2300306: Leaf Bunch#1 67
+    2300308: Leaf Bunch#1 68
+    2300310: Leaf Bunch#1 69
+    2300312: Leaf Bunch#1 7
+    2300314: Leaf Bunch#1 70
+    2300316: Leaf Bunch#1 71
+    2300318: Leaf Bunch#1 72
+    2300320: Leaf Bunch#1 73
+    2300322: Leaf Bunch#1 74
+    2300324: Leaf Bunch#1 75
+    2300326: Leaf Bunch#1 76
+    2300328: Leaf Bunch#1 77
+    2300330: Leaf Bunch#1 78
+    2300332: Leaf Bunch#1 79
+    2300334: Leaf Bunch#1 8
+    2300336: Leaf Bunch#1 80
+    2300338: Leaf Bunch#1 81
+    2300340: Leaf Bunch#1 9
+    2300342: ske16
+    2300344: trunk#1
+    2300346: trunk#2
+    2300348: trunk#2 1
+    2300350: trunk#2 10
+    2300352: trunk#2 11
+    2300354: trunk#2 12
+    2300356: trunk#2 13
+    2300358: trunk#2 14
+    2300360: trunk#2 2
+    2300362: trunk#2 3
+    2300364: trunk#2 4
+    2300366: trunk#2 5
+    2300368: trunk#2 6
+    2300370: trunk#2 7
+    2300372: trunk#2 8
+    2300374: trunk#2 9
+    2300376: trunk#3
+    2300378: trunk#4
+    2300380: trunk#4 1
+    2300382: trunk#4 10
+    2300384: trunk#4 11
+    2300386: trunk#4 12
+    2300388: trunk#4 13
+    2300390: trunk#4 14
+    2300392: trunk#4 2
+    2300394: trunk#4 3
+    2300396: trunk#4 4
+    2300398: trunk#4 5
+    2300400: trunk#4 6
+    2300402: trunk#4 7
+    2300404: trunk#4 8
+    2300406: trunk#4 9
+    3300000: Component#7
+    3300002: Component#7 1
+    3300004: Component#7 10
+    3300006: Component#7 11
+    3300008: Component#7 12
+    3300010: Component#7 13
+    3300012: Component#7 14
+    3300014: Component#7 15
+    3300016: Component#7 16
+    3300018: Component#7 17
+    3300020: Component#7 18
+    3300022: Component#7 19
+    3300024: Component#7 2
+    3300026: Component#7 20
+    3300028: Component#7 21
+    3300030: Component#7 22
+    3300032: Component#7 23
+    3300034: Component#7 24
+    3300036: Component#7 25
+    3300038: Component#7 26
+    3300040: Component#7 27
+    3300042: Component#7 28
+    3300044: Component#7 29
+    3300046: Component#7 3
+    3300048: Component#7 30
+    3300050: Component#7 31
+    3300052: Component#7 32
+    3300054: Component#7 33
+    3300056: Component#7 34
+    3300058: Component#7 35
+    3300060: Component#7 36
+    3300062: Component#7 37
+    3300064: Component#7 38
+    3300066: Component#7 39
+    3300068: Component#7 4
+    3300070: Component#7 40
+    3300072: Component#7 41
+    3300074: Component#7 42
+    3300076: Component#7 43
+    3300078: Component#7 44
+    3300080: Component#7 45
+    3300082: Component#7 46
+    3300084: Component#7 47
+    3300086: Component#7 48
+    3300088: Component#7 49
+    3300090: Component#7 5
+    3300092: Component#7 50
+    3300094: Component#7 51
+    3300096: Component#7 52
+    3300098: Component#7 53
+    3300100: Component#7 54
+    3300102: Component#7 55
+    3300104: Component#7 56
+    3300106: Component#7 57
+    3300108: Component#7 58
+    3300110: Component#7 59
+    3300112: Component#7 6
+    3300114: Component#7 60
+    3300116: Component#7 61
+    3300118: Component#7 62
+    3300120: Component#7 63
+    3300122: Component#7 64
+    3300124: Component#7 65
+    3300126: Component#7 66
+    3300128: Component#7 67
+    3300130: Component#7 68
+    3300132: Component#7 69
+    3300134: Component#7 7
+    3300136: Component#7 70
+    3300138: Component#7 71
+    3300140: Component#7 72
+    3300142: Component#7 73
+    3300144: Component#7 74
+    3300146: Component#7 75
+    3300148: Component#7 76
+    3300150: Component#7 77
+    3300152: Component#7 78
+    3300154: Component#7 79
+    3300156: Component#7 8
+    3300158: Component#7 80
+    3300160: Component#7 81
+    3300162: Component#7 82
+    3300164: Component#7 83
+    3300166: Component#7 84
+    3300168: Component#7 85
+    3300170: Component#7 86
+    3300172: Component#7 9
+    3300174: Group#17
+    3300176: Group#17 1
+    3300178: Leaf Bunch#1
+    3300180: Leaf Bunch#1 1
+    3300182: Leaf Bunch#1 10
+    3300184: Leaf Bunch#1 11
+    3300186: Leaf Bunch#1 12
+    3300188: Leaf Bunch#1 13
+    3300190: Leaf Bunch#1 14
+    3300192: Leaf Bunch#1 15
+    3300194: Leaf Bunch#1 16
+    3300196: Leaf Bunch#1 17
+    3300198: Leaf Bunch#1 18
+    3300200: Leaf Bunch#1 19
+    3300202: Leaf Bunch#1 2
+    3300204: Leaf Bunch#1 20
+    3300206: Leaf Bunch#1 21
+    3300208: Leaf Bunch#1 22
+    3300210: Leaf Bunch#1 23
+    3300212: Leaf Bunch#1 24
+    3300214: Leaf Bunch#1 25
+    3300216: Leaf Bunch#1 26
+    3300218: Leaf Bunch#1 27
+    3300220: Leaf Bunch#1 28
+    3300222: Leaf Bunch#1 29
+    3300224: Leaf Bunch#1 3
+    3300226: Leaf Bunch#1 30
+    3300228: Leaf Bunch#1 31
+    3300230: Leaf Bunch#1 32
+    3300232: Leaf Bunch#1 33
+    3300234: Leaf Bunch#1 34
+    3300236: Leaf Bunch#1 35
+    3300238: Leaf Bunch#1 36
+    3300240: Leaf Bunch#1 37
+    3300242: Leaf Bunch#1 38
+    3300244: Leaf Bunch#1 39
+    3300246: Leaf Bunch#1 4
+    3300248: Leaf Bunch#1 40
+    3300250: Leaf Bunch#1 41
+    3300252: Leaf Bunch#1 42
+    3300254: Leaf Bunch#1 43
+    3300256: Leaf Bunch#1 44
+    3300258: Leaf Bunch#1 45
+    3300260: Leaf Bunch#1 46
+    3300262: Leaf Bunch#1 47
+    3300264: Leaf Bunch#1 48
+    3300266: Leaf Bunch#1 49
+    3300268: Leaf Bunch#1 5
+    3300270: Leaf Bunch#1 50
+    3300272: Leaf Bunch#1 51
+    3300274: Leaf Bunch#1 52
+    3300276: Leaf Bunch#1 53
+    3300278: Leaf Bunch#1 54
+    3300280: Leaf Bunch#1 55
+    3300282: Leaf Bunch#1 56
+    3300284: Leaf Bunch#1 57
+    3300286: Leaf Bunch#1 58
+    3300288: Leaf Bunch#1 59
+    3300290: Leaf Bunch#1 6
+    3300292: Leaf Bunch#1 60
+    3300294: Leaf Bunch#1 61
+    3300296: Leaf Bunch#1 62
+    3300298: Leaf Bunch#1 63
+    3300300: Leaf Bunch#1 64
+    3300302: Leaf Bunch#1 65
+    3300304: Leaf Bunch#1 66
+    3300306: Leaf Bunch#1 67
+    3300308: Leaf Bunch#1 68
+    3300310: Leaf Bunch#1 69
+    3300312: Leaf Bunch#1 7
+    3300314: Leaf Bunch#1 70
+    3300316: Leaf Bunch#1 71
+    3300318: Leaf Bunch#1 72
+    3300320: Leaf Bunch#1 73
+    3300322: Leaf Bunch#1 74
+    3300324: Leaf Bunch#1 75
+    3300326: Leaf Bunch#1 76
+    3300328: Leaf Bunch#1 77
+    3300330: Leaf Bunch#1 78
+    3300332: Leaf Bunch#1 79
+    3300334: Leaf Bunch#1 8
+    3300336: Leaf Bunch#1 80
+    3300338: Leaf Bunch#1 81
+    3300340: Leaf Bunch#1 9
+    3300342: ske16
+    3300344: trunk#1
+    3300346: trunk#2
+    3300348: trunk#2 1
+    3300350: trunk#2 10
+    3300352: trunk#2 11
+    3300354: trunk#2 12
+    3300356: trunk#2 13
+    3300358: trunk#2 14
+    3300360: trunk#2 2
+    3300362: trunk#2 3
+    3300364: trunk#2 4
+    3300366: trunk#2 5
+    3300368: trunk#2 6
+    3300370: trunk#2 7
+    3300372: trunk#2 8
+    3300374: trunk#2 9
+    3300376: trunk#3
+    3300378: trunk#4
+    3300380: trunk#4 1
+    3300382: trunk#4 10
+    3300384: trunk#4 11
+    3300386: trunk#4 12
+    3300388: trunk#4 13
+    3300390: trunk#4 14
+    3300392: trunk#4 2
+    3300394: trunk#4 3
+    3300396: trunk#4 4
+    3300398: trunk#4 5
+    3300400: trunk#4 6
+    3300402: trunk#4 7
+    3300404: trunk#4 8
+    3300406: trunk#4 9
+    4300000: Mesh Component#7
+    4300002: Mesh ske16
+    4300004: Mesh Group#17
+    4300006: Mesh Leaf Bunch#1
+    4300008: Mesh trunk#4
+    4300010: Mesh trunk#1
+    4300012: Mesh trunk#2
+    4300014: Mesh trunk#3
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
