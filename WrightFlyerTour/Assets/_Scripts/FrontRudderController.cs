@@ -47,9 +47,9 @@ public class FrontRudderController : MonoBehaviour {
 			// Object may get stuck after moving it, so check that it does not over rotate
 			// Front rudder rotates from 360 to 340
 			if ((transform.localEulerAngles.x <= 360 - objOffsetFrontRud) && transform.localEulerAngles.x >= 180) {
-				print("hey");
-				Quaternion target = Quaternion.Euler (345, 0, 0);
-				transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
+				//print("hey");
+				//Quaternion target = Quaternion.Euler (345, 0, 0);
+				//transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
                 botRot = true;
             }
             else if ((transform.localEulerAngles.x <= initialObjPositionX + objOffsetFrontRud + 10 || transform.localEulerAngles.x >= 360 - objOffsetFrontRud))
@@ -72,8 +72,8 @@ public class FrontRudderController : MonoBehaviour {
 			}
             */
 			if ((transform.localEulerAngles.x >= initialObjPositionX + objOffsetFrontRud) && transform.localEulerAngles.x <= 180) {
-				Quaternion target = Quaternion.Euler (objOffsetFrontRud, 0, 0);
-				transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
+				//Quaternion target = Quaternion.Euler (objOffsetFrontRud, 0, 0);
+				//transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
                 topRot = true;
 			}
             else if (transform.localEulerAngles.x >= 360 - objOffsetFrontRud+ - 10 || transform.localEulerAngles.x <= initialObjPositionX + objOffsetFrontRud)
