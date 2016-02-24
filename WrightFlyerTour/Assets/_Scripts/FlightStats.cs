@@ -45,7 +45,7 @@ public class FlightStats : MonoBehaviour {
 			Speed.text = "Speed: " + speed.ToString("n2") + " mph";
 		}
 		else {
-			Debug.Log("Speed: " + speed.ToString("n2") + " mph");
+			// Debug.Log("Speed: " + speed.ToString("n2") + " mph");
 		}
 	}
 
@@ -56,18 +56,18 @@ public class FlightStats : MonoBehaviour {
 			Distance.text = "Distance Traveled: " + distance.ToString("n2") + " ft";
 		}
 		else {
-			Debug.Log("Distance Traveled: " + distance.ToString("n2") + " ft");
+			// Debug.Log("Distance Traveled: " + distance.ToString("n2") + " ft");
 		}
 	}
 
 	void setFlightTime(float flightTime) {
 		this.flightTime = flightTime;
 
-		if (Speed != null) {
+		if (AirTime != null) {
 			AirTime.text = "Air Time: " + flightTime.ToString("n2") + " sec";
 		}
 		else {
-			Debug.Log("Air Time: " + flightTime.ToString("n2") + " sec");
+			// Debug.Log("Air Time: " + flightTime.ToString("n2") + " sec");
 		}
 	}
 

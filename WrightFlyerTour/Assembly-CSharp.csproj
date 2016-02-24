@@ -106,6 +106,8 @@
      <Compile Include="Assets\_Scripts\GyroscopeEnable.cs" />
      <Compile Include="Assets\_Scripts\MobileTiltControlsManager.cs" />
      <Compile Include="Assets\_Scripts\ObjectReset.cs" />
+     <Compile Include="Assets\_Scripts\RotatingVRHead.cs" />
+     <Compile Include="Assets\_Scripts\SubtitleManager.cs" />
      <Compile Include="Assets\_Scripts\ThrottleManager.cs" />
      <Compile Include="Assets\_Scripts\TutorialSegment.cs" />
      <Compile Include="Assets\_Scripts\WingWarpController.cs" />
