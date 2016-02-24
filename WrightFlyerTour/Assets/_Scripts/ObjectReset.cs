@@ -3,6 +3,8 @@ using System.Collections;
 
 public class ObjectReset : MonoBehaviour {
 
+	public GameObject objectToReset;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -11,7 +13,7 @@ public class ObjectReset : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Cardboard.SDK.Triggered) {
-			resetRigidBody(gameObject);
+			resetRigidBody(objectToReset);
 		}
 	}
 
