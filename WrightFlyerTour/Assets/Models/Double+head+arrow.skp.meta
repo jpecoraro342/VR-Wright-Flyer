@@ -1,0 +1,103 @@
+fileFormatVersion: 2
+guid: 29a29871554f3484181f62b42ec85113
+timeCreated: 1456333715
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 0000000001000000020000000300000004000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 7b017c89ab9ab0a7e29221c6a6f50ba5
+  longitude: -105.283
+  latitude: 40.017
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 4.980427, y: 53.666573, z: -31.870995}
+      lookAt: {x: 3.1054747, y: 0.2689298, z: 12.057489}
+      up: {x: -0.032919325, y: 0.63565516, z: 0.771271}
+      fov: 45
+      aspectRatio: 0
+      orthoSize: 15888.848
+      isPerspective: 0
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: download?mid=13d447774cccb59487d26c097da7dd1a&ctyp=sm&cv=m8.0
+    100004: Susan
+    400000: //RootNode
+    400002: download?mid=13d447774cccb59487d26c097da7dd1a&ctyp=sm&cv=m8.0
+    400004: Susan
+    2300000: download?mid=13d447774cccb59487d26c097da7dd1a&ctyp=sm&cv=m8.0
+    2300002: Susan
+    3300000: download?mid=13d447774cccb59487d26c097da7dd1a&ctyp=sm&cv=m8.0
+    3300002: Susan
+    4300000: Mesh Susan
+    4300002: Mesh download?mid=13d447774cccb59487d26c097da7dd1a&ctyp=sm&cv=m8.0
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.00025399998
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
