@@ -74,6 +74,7 @@
      <None Include="Assets\Imported Assets\Skybox\README.txt" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Imported Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Bike\Shaders\AlphaTest_Complete.shader" />
      <None Include="Assets\Imported Assets\Cardboard\Resources\UI\CardboardReticleShader.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
