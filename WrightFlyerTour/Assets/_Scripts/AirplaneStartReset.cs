@@ -1,22 +1,61 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.Vehicles.Aeroplane;
 
 public class AirplaneStartReset : MonoBehaviour {
 
 	public GameObject planeLaunchingPoint;
 	public GameObject plane;
-
 	public GameObject planeCamera;
+	public GameObject charCamera;
+	public FrontRudderController frontRudScript;
+	public BackRudderController backRudScript;
+	public WingWarpController wingWarpScript;
+	public CustomAirplaneUserControl planeScript;
+
+
+
+
+
+/* //TEST CODE
+	public bool frontRudOn = false;
+	public bool backRudOn = false;
+	public bool wingWarpOn = false;
+
+
+	if (frontRudOn) {
+			enablePitchMovement();
+		}
+		else {
+			disablePitchMovement();
+		}
+
+		if (backRudOn) {
+			enableYawMovement();
+		}
+		else {
+			disableYawMovement();
+		}
+
+		if (wingWarpOn) {
+			enableRollMovement();
+		}
+		else {
+			disableRollMovement();
+		}
+
+*/
 
 	// TODO: Get all the objects
 
 	// Use this for initialization
 	void Start () {
-	
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		
+
 	
 	}
 
@@ -28,51 +67,73 @@ public class AirplaneStartReset : MonoBehaviour {
 	void startPlaneSequence() {
 		// TODO: 
 		// Freeze Rotation of Plane? 
+		plane.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+	}
+
+	public void enablePlaneCamera() {
+		planeCamera.SetActive(true);
+	}
+
+	public void disablePlaneCamera() {
+		planeCamera.SetActive(false);
+	}
+
+	public void enableCharCamera() {
+		charCamera.SetActive(true);
+	}
+
+	public void disableCharCamera() {
+		charCamera.SetActive(false);
 	}
 		
 	public void enablePlaneMovement() {
 		// Turn gravity on
 		// unfreeze some parts of rigidbody?
 		// enable plane movement script
+
+		plane.GetComponent<Rigidbody>().useGravity = true;
+		plane.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+		planeScript.enabled = true;
+
+
 	}
 
 	void disablePlaneMovement() {
 		// Turn off gravity
 		// Freeze Rigid Body
 		// disable plane movement script
+
+		plane.GetComponent<Rigidbody>().useGravity = false;
+		plane.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+		planeScript.enabled = false;
 	}
 
 	public void enablePitchMovement() {
-		FrontRudderController script = GameComponent<FrontRudderController>();
-		script.enabled = true;
+		frontRudScript.enabled = true;
 	}
 
 	public void enableYawMovement() {
-		BackRudderController script = GameComponent<BackRudderController>();
-		script.enabled = true;
+		backRudScript.enabled = true;
 	}
 
 	public void enableRollMovement() {
-		WingWarpController script = GameComponent<WingWarpController>();
-		script.enabled = true;
+		wingWarpScript.enabled = true;
 	}
 
 	public void disablePitchMovement() {
-		FrontRudderController script = GameComponent<FrontRudderController>();
-		script.enabled = false;
+		frontRudScript.enabled = false;
 	}
 
 	public void disableYawMovement() {
-		BackRudderController script = GameComponent<BackRudderController>();
-		script.enabled = false;	
+		backRudScript.enabled = false;	
 	}
 
 	public void disableRollMovement() {
-		WingWarpController script = GameComponent<WingWarpController>();
-		script.enabled = false;
+		wingWarpScript.enabled = false;
 	}
 
 	public void turnEngineOn() {
+		//planeScript.enabled = true;
 
 	}
 
