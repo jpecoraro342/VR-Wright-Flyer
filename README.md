@@ -1,20 +1,29 @@
 # VR Wright Flyer :cloud: :cloud: :cloud: 
 A educational virtual reality project for Google Cardboard that places the user back in time to 1903 when the Wright Brothers flew their first flight.
 
-[Download link for android build](github.com)
+### Source Code and APK
 
-[Link to the website](github.com)
+[Android APK and Source Code](https://drive.google.com/file/d/0B4r_loZFJqdyQlJONDVMalZ1a0k/view)
 
 ### Authors and Contributors
 
 [Joseph Pecoraro](https://github.com/jpecoraro342)
+
 [Reid Gill](https://github.com/reidgill)
+
 [Fai Kwok](https://github.com/cfkwok)
 
 ### Gameplay Video
 4 minute Youtube Video - 3 minute of the experience followed by 1 minute explaining technical components
-View a video of gameplay at this link.
-[YouTube Link](https://www.youtube.com)
+
+[Video Demo](https://youtu.be/PfHQ5FNPDdA)
+
+### Screenshots
+
+![alt text](https://raw.githubusercontent.com/jpecoraro342/VR-Wright-Flyer/master/screenshots/5ShouLQ.jpg)
+![alt text](https://raw.githubusercontent.com/jpecoraro342/VR-Wright-Flyer/master/screenshots/GPyaYZc.jpg)
+![alt text](https://raw.githubusercontent.com/jpecoraro342/VR-Wright-Flyer/master/screenshots/rUMjOS9.jpg)
+![alt text](https://raw.githubusercontent.com/jpecoraro342/VR-Wright-Flyer/master/screenshots/uKF1qqy.jpg)
 
 ### Description
 Experience the day the Wright Brothers flew the first flight using virtual reality power of Google Cardboard. Users will be immersed in Kitty Hawk, North Carolina from the first-person perspective of Wilbur Wright. Orville Wright will explain to you a brief history as well as an educational run-down of all of the components that made the first machine-powered flyer so special. At the end, you will get to test flight the flyer by using the motion of your head. 
@@ -61,63 +70,70 @@ Kitty Hawk itself was first put in Maya and the field was stretched to preserve 
 App starts with the user placed in front of Orville and he becomes the guide for the user until the flight
 The flight itself will be timed, and it would be difficult to sustain airtime for long periods
 
-### Education Evaluation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
-[Likert Survey]
+### Education Evaluation	
+                                               {Likert Survey}
+                                          (Answered by Jason Owens)
+              Strongly Agree(1)  Agree(2)  Undecided(3)  Disagree(4) Strongly Disagree(5)
+======================================================================================================
+                                          (ANSWERS IN PARANTHESIS)
 
-		                  Strongly Agree  Agree  Undecided  Disagree Strongly Disagree
-=============================================================================
-      			              1		  2              3                 4                       5
-                 (BEFORE USAGE)
-I have a good understanding of the controls and components of the original Wright Flyer.
-I know of the three rotational components that the three axis component provides for the Flyer.
-I know of the component that that made the engine connect to the propellers on the original Wright Flyer
-I know a basic history about the original Wright Flyer and first day of flight.
+                                               {BEFORE USAGE}
+
+I have a good understanding of the controls and components of the original Wright Flyer. (4)
+
+I know of the three rotational components that the three axis component provides for the Flyer. (5) 
+
+I know of the component that that made the engine connect to the propellers on the original Wright Flyer. (3)
+
+I know a basic history about the original Wright Flyer and first day of flight. (2)
+
+QUESTION: Ask participant to give an example of the knowledge they already have around the learning objective. 
+
+(ANSWER: "I know they did it on a beach, not necessarily their first flight. I know they had a bike shop. They did stuff with gears in the bike shop that helped make the first plane. It has two propellers, two wings. First flight was a couple hundred of feet.")
+
+                                                {AFTER USAGE}
+
+I have a good understanding of the controls and components of the original Wright Flyer. (2) 
+
+I know of the three rotational components that the three axis component provides for the Flyer. (1)
+
+I know of the component that that made the engine connect to the propellers on the original Wright Flyer. (3)
+
+I know a basic history about the original Wright Flyer and first day of flight. (2)
 
 QUESTION: Ask participant to give an example of the knowledge they already have around the learning objective.
 	
+(ANSWER: "I learned a lot about roll, pitch, and yaw and it's importance on the Wright brothers plane.")
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	
-      			 Strongly Agree  Agree  Undecided  Disagree Strongly Disagree
-=============================================================================
-      			              1		  2              3                 4                       5
-                 (AFTER USAGE)
-I have a good understanding of the controls and components of the original Wright Flyer.
-I know of the three rotational components that the three axis component provides for the Flyer.
-I know of the component that that made the engine connect to the propellers on the original Wright Flyer
-I know a basic history about the original Wright Flyer and first day of flight.
+==============================================================================================================
 
-QUESTION: Ask participant to give an example of the knowledge they already have around the learning objective.
-	
+### Quantifying Presence: SUS Scale
 
-==============================================================================
-
-### SUS Scale
+ {Participants: Jason Owens, Bernard Marger, Nicolas James}
 
 -On a scale of 1 (Strongly disagree) and 5 as (Strongly agree )
 
--Average SUS between 3 people ( ):
+-Average SUS between 3 people (2.765 total):
 
--I think that I would like to use this system frequently: [ ] 
+-I think that I would like to use this system frequently: [2.33] 
 
--I found the system unecessarily complex: [ ]
+-I found the system unecessarily complex: [2]
 
--I thought the system was easy to use: [ ]
+-I thought the system was easy to use: [3]
 
--I think that I would need the support of a technical person to be able to use this system: [ ] 
+-I think that I would need the support of a technical person to be able to use this system: [2] 
 
--I found the various functions in this system were well integrated: [ ]
+-I found the various functions in this system were well integrated: [4]
 
--I thought there was too much inconsistency in this system: [ ]
+-I thought there was too much inconsistency in this system: [2]
 
--I would imagine that most people would learn to use this system very quickly: [ ]
+-I would imagine that most people would learn to use this system very quickly: [2.66]
 
--I found the system very cumbersome to use: [ ]
+-I found the system very cumbersome to use: [2.33]
 
--I felt very confident using the system: [ ] 
+-I felt very confident using the system: [3] 
 
--I needed to learn a lot of things before I could get going with this system: [ ]
+-I needed to learn a lot of things before I could get going with this system: [2.33]
 
 
 
@@ -175,4 +191,3 @@ Kitty Hawk tables, wood planks, ect.
 Orville’s voice
 
 Wright flyer animations 
-
