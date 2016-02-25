@@ -21,7 +21,7 @@ public class AirplaneStartReset : MonoBehaviour {
 	}
 
 	public void resetAirplane() {
-		StartCoroutine(resetRigidBody());
+		StartCoroutine(resetRigidBody(plane.rigidBody));
 		startPlaneSequence();
 	}
 
@@ -43,27 +43,33 @@ public class AirplaneStartReset : MonoBehaviour {
 	}
 
 	public void enablePitchMovement() {
-		// turn on pitch script
+		FrontRudderController script = GameComponent<FrontRudderController>();
+		script.enabled = true;
 	}
 
 	public void enableYawMovement() {
-		// turn on rudder script
+		BackRudderController script = GameComponent<BackRudderController>();
+		script.enabled = true;
 	}
 
 	public void enableRollMovement() {
-		// turn on roll script
+		WingWarpController script = GameComponent<WingWarpController>();
+		script.enabled = true;
 	}
 
 	public void disablePitchMovement() {
-		// turn on pitch script
+		FrontRudderController script = GameComponent<FrontRudderController>();
+		script.enabled = false;
 	}
 
 	public void disableYawMovement() {
-		// turn on rudder script
+		BackRudderController script = GameComponent<BackRudderController>();
+		script.enabled = false;	
 	}
 
 	public void disableRollMovement() {
-		// turn on roll script
+		WingWarpController script = GameComponent<WingWarpController>();
+		script.enabled = false;
 	}
 
 	public void turnEngineOn() {
