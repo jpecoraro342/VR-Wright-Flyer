@@ -21,7 +21,7 @@ public class AirplaneStartReset : MonoBehaviour {
 	}
 
 	public void resetAirplane() {
-		StartCoroutine(resetRigidBody());
+		StartCoroutine(resetRigidBody(plane));
 		startPlaneSequence();
 	}
 
