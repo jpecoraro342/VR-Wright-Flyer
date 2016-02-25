@@ -56,11 +56,15 @@
      <None Include="Assets\Imported Assets\Cardboard\Resources\SkyboxMesh.shader" />
      <None Include="Assets\Imported Assets\Cardboard\Distortion\CardboardDistortion.cginc" />
      <None Include="Assets\Imported Assets\Cardboard\Resources\UnlitTexture.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Imported Assets\Aircraft\AircraftGuidelines.txt" />
      <None Include="Assets\Imported Assets\Skybox\README.txt" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Imported Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Bike\Shaders\AlphaTest_Complete.shader" />
      <None Include="Assets\Imported Assets\Cardboard\Resources\UI\CardboardReticleShader.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
      <None Include="Assets\Imported Assets\Cardboard\Resources\SolidColor.shader" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -100,6 +104,8 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{F15F31E4-7B91-5525-A04C-0B2A3A40464B}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{5C673C5C-3CBC-C106-EC20-A4B5D0355B05}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>

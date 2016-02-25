@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Environment\Orville\OrvilleControllerScript.cs" />
      <Compile Include="Assets\Imported Assets\Aircraft\Scripts\AeroplaneAiControl.cs" />
      <Compile Include="Assets\Imported Assets\Aircraft\Scripts\AeroplaneAudio.cs" />
      <Compile Include="Assets\Imported Assets\Aircraft\Scripts\AeroplaneControlSurfaceAnimator.cs" />
@@ -92,6 +93,9 @@
      <Compile Include="Assets\Imported Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
      <Compile Include="Assets\Imported Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
      <Compile Include="Assets\Imported Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\Scripts\ElevatorController.cs" />
+     <Compile Include="Assets\Scripts\ElevatorController2.cs" />
+     <Compile Include="Assets\Scripts\EngineStartController.cs" />
      <Compile Include="Assets\_Scripts\AirplaneStartReset.cs" />
      <Compile Include="Assets\_Scripts\Autowalk.cs" />
      <Compile Include="Assets\_Scripts\BackRudderController.cs" />
@@ -103,6 +107,8 @@
      <Compile Include="Assets\_Scripts\GyroscopeEnable.cs" />
      <Compile Include="Assets\_Scripts\MobileTiltControlsManager.cs" />
      <Compile Include="Assets\_Scripts\ObjectReset.cs" />
+     <Compile Include="Assets\_Scripts\OrvilleMovementManager.cs" />
+     <Compile Include="Assets\_Scripts\PropellerRotate.cs" />
      <Compile Include="Assets\_Scripts\RotatingVRHead.cs" />
      <Compile Include="Assets\_Scripts\SubtitleManager.cs" />
      <Compile Include="Assets\_Scripts\ThrottleManager.cs" />
@@ -111,11 +117,15 @@
      <None Include="Assets\Imported Assets\Cardboard\Resources\SkyboxMesh.shader" />
      <None Include="Assets\Imported Assets\Cardboard\Distortion\CardboardDistortion.cginc" />
      <None Include="Assets\Imported Assets\Cardboard\Resources\UnlitTexture.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Imported Assets\Aircraft\AircraftGuidelines.txt" />
      <None Include="Assets\Imported Assets\Skybox\README.txt" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Imported Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Bike\Shaders\AlphaTest_Complete.shader" />
      <None Include="Assets\Imported Assets\Cardboard\Resources\UI\CardboardReticleShader.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
      <None Include="Assets\Imported Assets\Cardboard\Resources\SolidColor.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -123,6 +133,10 @@
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{F15F31E4-7B91-5525-A04C-0B2A3A40464B}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
