@@ -72,7 +72,7 @@ public class TutorialSegment : MonoBehaviour {
 		if (!vrHead.activeInHierarchy) {
 			vrHead.SetActive(true);
 			rotationVRHeadScript.startYawRotate();
-			gameplayScript.startRearRudderSequence();
+			//gameplayScript.startRearRudderSequence();
 		}
 		if (!completedBackRudL) {
 			//tutText.text = "Turn your head left to control the yaw";
@@ -91,6 +91,7 @@ public class TutorialSegment : MonoBehaviour {
 				//print("Great job!");
 				completedBackRudR = true;
 				vrHead.SetActive(false);
+				gameplayScript.startRollText();
 
 				//enabled = false;
 			}
@@ -104,7 +105,7 @@ public class TutorialSegment : MonoBehaviour {
 		if (!vrHead.activeInHierarchy) {
 			vrHead.SetActive(true);
 			rotationVRHeadScript.startRollRotate();
-			gameplayScript.startRollText();
+			
 
 		}
 		if (!completedWingL) {
@@ -114,6 +115,7 @@ public class TutorialSegment : MonoBehaviour {
 				//tutText.CrossFadeAlpha(0.0f, 0.5f, false);
 				completedWingL = true;
 				//print("Good!");
+
 			}
 		}
 
@@ -127,7 +129,7 @@ public class TutorialSegment : MonoBehaviour {
 				completedWingR = true;
 				vrHead.SetActive(false);
 				//enabled = false;
-
+				
 				gameplayScript.startMoveToPlane();
 			}
 

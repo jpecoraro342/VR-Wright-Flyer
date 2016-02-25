@@ -25,6 +25,11 @@ public class GamePlayScript : MonoBehaviour {
 	public GameObject tapToTurnEngineOn;
 	public GameObject tapToFly;
 
+	public AudioSource orvilleAudSource;
+	public AudioClip[] orvilleVoices;
+
+	private int clipInd = 0;
+
 	TriggerManager currentTriggerManager;
 
 	private delegate void TriggerManager();
@@ -70,6 +75,12 @@ public class GamePlayScript : MonoBehaviour {
 	}
 
 	void orvilleFirstLine() {
+ 
+     	// foreach(AudioClip orvilleVoice in orvilleVoices){
+      //  		audio.PlayOneShot(orvilleVoice.name);
+     	// 	}
+		orvilleAudSource.clip = orvilleVoices[clipInd++];
+		orvilleAudSource.Play();
 		orvilleManager.startTalking();
 
 		var subtitle = "Orville: \"It’s quite fascinating we came all the way from working on bicycles to working on flying machines, eh Wilbur?\"";
@@ -88,6 +99,11 @@ public class GamePlayScript : MonoBehaviour {
 
 		orvilleManager.startTalking();
 
+		orvilleAudSource.Stop();
+		orvilleAudSource.clip = orvilleVoices[clipInd++];
+		orvilleAudSource.Play();
+		orvilleManager.startTalking();
+
 		var subtitle = "Orville: \"Well, come along and follow me to the glider so we can get your last flight of the day in!\"";
 
 		subtitleManager.playSubtitleForTime(subtitle, 5f, endOrvilleSecondLine);
@@ -104,9 +120,10 @@ public class GamePlayScript : MonoBehaviour {
 	}
 
 	void startOrvilleThirdLine() {
-		// Stop current audio
-		// set new audio file
-		// start playing audio
+		orvilleAudSource.Stop();
+		orvilleAudSource.clip = orvilleVoices[clipInd++];
+		orvilleAudSource.Play();
+		orvilleManager.startTalking();
 		subtitleManager.playSubtitleForTime("Orville: \"I still can’t believe we finally flew our first successful flight today! I was off the ground for a whole 12 seconds and 112 feet.\"", 8f, startOrvilleFourthLine);
 	}
 		
@@ -119,7 +136,7 @@ public class GamePlayScript : MonoBehaviour {
 	}
 
 	void startOrvilleSixthLine() {
-		subtitleManager.playSubtitleForTime("Orville: \"Now that we have the front elevator fixed, we’ve been doing much better. The 21 mile per hour headwind helps a lot too.\"", 6f, endOrvilleWalkSequence);
+		subtitleManager.playSubtitleForTime("Orville: \"Now that we have the front elevator fixed, we’ve been doing much better. The 21 mile per hour headwind helps a lot too.\"", 10f, endOrvilleWalkSequence);
 	}
 
 	void endOrvilleWalkSequence() {
@@ -151,13 +168,25 @@ public class GamePlayScript : MonoBehaviour {
 		tapToContinueToPlaneCanvas.SetActive(false);
 
 		orvilleManager.startTalking();
+
+		orvilleAudSource.Stop();
+		orvilleAudSource.clip = orvilleVoices[clipInd++];
+		orvilleAudSource.Play();
+		orvilleManager.startTalking(); 
+
 		var subtitle = "Orville: \"Alright, just to refresh you, let’s go over the innovative functions of our flyer that makes it different than anything else, the three-axis control. Go ahead and take a look at the back rudder.\"";
-		subtitleManager.playSubtitleForTime(subtitle, 11f, startRearRudderSequence);
+		subtitleManager.playSubtitleForTime(subtitle, 14f, startRearRudderSequence);
 	}
 
 	public void startRearRudderSequence() {
+
+		orvilleAudSource.Stop();
+		orvilleAudSource.clip = orvilleVoices[clipInd++];
+		orvilleAudSource.Play();
+		orvilleManager.startTalking(); 
+
 		var subtitle = "Orville: \"As you may recall, the back rudder controls the yaw of our glider. Just like you would rotate your head to look left and right, the yaw allows us to swivel left and right. Try simulating this with your head right now.\"";
-		subtitleManager.playSubtitleForTime(subtitle, 11f, showYawMovementIcon);
+		subtitleManager.playSubtitleForTime(subtitle, 17f, showYawMovementIcon);
 	}
 
 	void showYawMovementIcon() {
@@ -171,14 +200,24 @@ public class GamePlayScript : MonoBehaviour {
 	}
 
 	public void startRollText() {
-		orvilleManager.startTalking();
+		orvilleAudSource.Stop();
+		orvilleAudSource.clip = orvilleVoices[clipInd++];
+		orvilleAudSource.Play();
+		orvilleManager.startTalking(); 
+
 		var subtitle = "Orville: \"Good job. Just as important as the yaw, is the roll. The roll moves the glider in the same way that you would roll your head to touch your ears to your shoulders. This is accomplished by wing warping, or the slight contortion of the wings to achieve a roll-like movement in the air. Go ahead and try simulating this with your head.\"";
-		subtitleManager.playSubtitleForTime(subtitle, 15f, null);
+		subtitleManager.playSubtitleForTime(subtitle, 26f, null);
 	}
 
 	public void startMoveToPlane() {
+
+		orvilleAudSource.Stop();
+		orvilleAudSource.clip = orvilleVoices[clipInd++];
+		orvilleAudSource.Play();
+		orvilleManager.startTalking(); 
+
 		var subtitle = "Orville: \"Nice job! Surprisingly, both the yaw and the roll are controlled by a U-shaped hip cradle in the middle of the cockpit. Why don’t you hop in and try it out?\"";
-		subtitleManager.playSubtitleForTime(subtitle, 10f, showYawMovementIcon);
+		subtitleManager.playSubtitleForTime(subtitle, 13f, showYawMovementIcon);
 
 		currentTriggerManager = enterPlane;
 		tapToEnterPlaneCanvas.SetActive(true);
@@ -201,15 +240,26 @@ public class GamePlayScript : MonoBehaviour {
 	}
 
 	public void startPitchText() {
+
+		orvilleAudSource.Stop();
+		orvilleAudSource.clip = orvilleVoices[clipInd++];
+		orvilleAudSource.Play();
+		orvilleManager.startTalking(); 
+
 		var subtitle = "Orville: \"Okay Wilbur! Right in front of you is a lever that controls the front elevator. The elevator controls the pitch of the flyer. It moves the flyer in an up-down motion, essential for giving the flyer lift in the air. Why don’t you give it a try?\"";
-		subtitleManager.playSubtitleForTime(subtitle, 10f, null);
+		subtitleManager.playSubtitleForTime(subtitle, 21f, null);
 	}
 
 	public void startEngineTutorialSegment() {
 		tutScript.enabled = false;
 
+		orvilleAudSource.Stop();
+		orvilleAudSource.clip = orvilleVoices[clipInd++];
+		orvilleAudSource.Play();
+		orvilleManager.startTalking(); 
+
 		var subtitle = "Orville: \"Nice Wilbur! Alright, now that you understand the roll, pitch, and yaw, why don’t we get you flying? As you may recall, our engine there to your right moves a bicycle chain which is connected to the two propellers in the back. It is quite revolutionary. Go ahead and fire it up!\"";
-		subtitleManager.playSubtitleForTime(subtitle, 16f, null);
+		subtitleManager.playSubtitleForTime(subtitle, 24f, null);
 
 		tapToTurnEngineOn.SetActive(true);
 		currentTriggerManager = turnOnEngine;
@@ -224,8 +274,14 @@ public class GamePlayScript : MonoBehaviour {
 	}
 
 	public void lastFrikingThingToSay() {
+
+		orvilleAudSource.Stop();
+		orvilleAudSource.clip = orvilleVoices[clipInd++];
+		orvilleAudSource.Play();
+		orvilleManager.startTalking(); 
+
 		var subtitle = "Orville: \"Okay, Wilbur! Why don’t you give it a test flight whenever you are ready!\"";
-		subtitleManager.playSubtitleForTime(subtitle, 4f, null);
+		subtitleManager.playSubtitleForTime(subtitle, 6f, null);
 		tapToFly.SetActive(true);
 		currentTriggerManager = startFlying;
 	}
