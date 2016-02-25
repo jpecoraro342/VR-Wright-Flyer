@@ -217,7 +217,7 @@ public class GamePlayScript : MonoBehaviour {
 		orvilleManager.startTalking(); 
 
 		var subtitle = "Orville: \"Nice job! Surprisingly, both the yaw and the roll are controlled by a U-shaped hip cradle in the middle of the cockpit. Why don’t you hop in and try it out?\"";
-		subtitleManager.playSubtitleForTime(subtitle, 13f, showYawMovementIcon);
+		subtitleManager.playSubtitleForTime(subtitle, 13f, null);
 
 		currentTriggerManager = enterPlane;
 		tapToEnterPlaneCanvas.SetActive(true);

@@ -7,7 +7,7 @@ public class FrontRudderController : MonoBehaviour {
 	public GameObject lever;
 	public GameObject axisPulley;
 
-	private CardboardHead head;
+	public CardboardHead head;
 	private Vector3 initialOffset;
 	private float initialObjPositionX;
 	private float objOffsetFrontRud = 20F;
@@ -19,7 +19,7 @@ public class FrontRudderController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		head = Camera.main.GetComponent<StereoController>().Head;
+		// head = Camera.main.GetComponent<StereoController>().Head;
 		//initialOffset = head.transform.localEulerAngles;
 		initialObjPositionX = transform.localEulerAngles.x;
 		//print("Wing: " + initialOffset.x + " " + initialOffset.y + " " + initialOffset.x);
