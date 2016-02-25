@@ -20,6 +20,7 @@ public class GamePlayScript : MonoBehaviour {
 	public GameObject startingCamera;
 	public GameObject startingRenderer;
 	public GameObject airplaneCardboard;
+	public GameObject airplaneHead;
 
 	public GameObject tapToTurnEngineOn;
 	public GameObject tapToFly;
@@ -52,10 +53,12 @@ public class GamePlayScript : MonoBehaviour {
 		startingCamera.SetActive(false);
 		startingRenderer.SetActive(false);
 		airplaneCardboard.SetActive(true);
+		// Cardboard.SDK.Recenter();
 
 		airplaneControllerScript.enablePitchMovement();
 		airplaneControllerScript.enableRollMovement();
 		airplaneControllerScript.enableYawMovement();
+		airplaneControllerScript.turnEngineOn();
 
 		startFlying();
 	}
@@ -101,6 +104,9 @@ public class GamePlayScript : MonoBehaviour {
 	}
 
 	void startOrvilleThirdLine() {
+		// Stop current audio
+		// set new audio file
+		// start playing audio
 		subtitleManager.playSubtitleForTime("Orville: \"I still can’t believe we finally flew our first successful flight today! I was off the ground for a whole 12 seconds and 112 feet.\"", 8f, startOrvilleFourthLine);
 	}
 		
@@ -165,6 +171,7 @@ public class GamePlayScript : MonoBehaviour {
 	}
 
 	public void startRollText() {
+		orvilleManager.startTalking();
 		var subtitle = "Orville: \"Good job. Just as important as the yaw, is the roll. The roll moves the glider in the same way that you would roll your head to touch your ears to your shoulders. This is accomplished by wing warping, or the slight contortion of the wings to achieve a roll-like movement in the air. Go ahead and try simulating this with your head.\"";
 		subtitleManager.playSubtitleForTime(subtitle, 15f, null);
 	}
@@ -178,12 +185,14 @@ public class GamePlayScript : MonoBehaviour {
 	}
 
 	public void enterPlane() {
+		orvilleManager.stopTalking();
 		tapToEnterPlaneCanvas.SetActive(false);
 		currentTriggerManager = null;
 
 		startingCamera.SetActive(false);
 		startingRenderer.SetActive(false);
 		airplaneCardboard.SetActive(true);
+		// Cardboard.SDK.Recenter();
 
 		// Start the tutorial segment for pitch
 		airplaneControllerScript.enablePitchMovement();
@@ -225,5 +234,6 @@ public class GamePlayScript : MonoBehaviour {
 		tapToFly.SetActive(false);
 
 		airplaneControllerScript.enablePlaneMovement();
+
 	}
 }

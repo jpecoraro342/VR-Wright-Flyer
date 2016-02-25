@@ -96,7 +96,8 @@ public class AirplaneStartReset : MonoBehaviour {
 
 		plane.GetComponent<Rigidbody>().useGravity = true;
 		plane.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-		planeScript.enabled = true;
+		// planeScript.enabled = true;
+		StartCoroutine(reduceTheLift());
 	}
 
 	void disablePlaneMovement() {
@@ -106,7 +107,7 @@ public class AirplaneStartReset : MonoBehaviour {
 
 		plane.GetComponent<Rigidbody>().useGravity = false;
 		plane.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-		planeScript.enabled = false;
+		// planeScript.enabled = false;
 	}
 
 	public void enablePitchMovement() {
@@ -137,13 +138,13 @@ public class AirplaneStartReset : MonoBehaviour {
 		//planeScript.enabled = true;
 		p1.enabled = true;
 		p2.enabled = true;
-		// planeScript.enabled = true;
+		planeScript.enabled = true;
 	}
 
 	public void turnEngineOff() {
 		p1.enabled = false;
 		p2.enabled = false;
-		// planeScript.enabled = false;
+		planeScript.enabled = false;
 	}
 
 	IEnumerator resetRigidBody(GameObject gobject) {
@@ -159,5 +160,12 @@ public class AirplaneStartReset : MonoBehaviour {
 		yield return new WaitForSeconds(1.0f);
 
 		rigidbody.WakeUp();
+	}
+
+	IEnumerator reduceTheLift() {
+		while (planeController.getLift() > 0) {
+			yield return new WaitForSeconds(6);
+			planeController.setLift(planeController.getLift() - .1f);
+		}
 	}
 }

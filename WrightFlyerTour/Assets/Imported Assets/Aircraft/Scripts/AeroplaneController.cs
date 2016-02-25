@@ -45,6 +45,14 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
         private Rigidbody m_Rigidbody;
 	    WheelCollider[] m_WheelColliders;
 
+		public float getLift() {
+			return m_Lift;
+		}
+
+		public void setLift(float lift) {
+			m_Lift = lift;
+		}
+
 
         private void Start()
         {

@@ -99,6 +99,7 @@
      <Compile Include="Assets\_Scripts\AirplaneStartReset.cs" />
      <Compile Include="Assets\_Scripts\Autowalk.cs" />
      <Compile Include="Assets\_Scripts\BackRudderController.cs" />
+     <Compile Include="Assets\_Scripts\CardboardRecenter.cs" />
      <Compile Include="Assets\_Scripts\CharacterMotor.cs" />
      <Compile Include="Assets\_Scripts\CustomAirplaneUserControl.cs" />
      <Compile Include="Assets\_Scripts\FPSInputController.cs" />
