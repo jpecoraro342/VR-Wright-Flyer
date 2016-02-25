@@ -9,6 +9,17 @@ public class GamePlayScript : MonoBehaviour {
 	public Autowalk walkScript;
 	public GameObject tapToToggleWalkCanvasObject;
 	public GameObject wilburWayPoint;
+	public GameObject tapToContinueToPlaneCanvas;
+	public GameObject tapToEnterPlaneCanvas;
+
+	public AirplaneStartReset airplaneControllerScript;
+//	public RotatingVRHead rotationVRHeadScript;
+//	public GameObject vrHead;
+	public TutorialSegment tutScript;
+
+	public GameObject startingCamera;
+	public GameObject startingRenderer;
+	public GameObject airplaneCardboard;
 
 	TriggerManager currentTriggerManager;
 
@@ -18,6 +29,9 @@ public class GamePlayScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		currentTriggerManager = openingTriggerManager;
+		airplaneControllerScript.disablePitchMovement();
+		airplaneControllerScript.disableRollMovement();
+		airplaneControllerScript.disableYawMovement();
 	}
 	
 	// Update is called once per frame
@@ -96,12 +110,84 @@ public class GamePlayScript : MonoBehaviour {
 	}
 
 	public void wilburReachedWayPoint() {
-		Debug.Log("Start all the plane crap");
 		wilburWayPoint.SetActive(false);
 		walkScript.enabled = false;
+		StartCoroutine(waitBeforeLettingTap());
+	}
+
+	IEnumerator waitBeforeLettingTap() {
+		yield return new WaitForSeconds(1f);
+
+		tapToContinueToPlaneCanvas.SetActive(true);
+
+		currentTriggerManager = startOrvillePlaneInstructions;
 	}
 
 	void startOrvillePlaneInstructions() {
+		currentTriggerManager = null;
 
+		tapToContinueToPlaneCanvas.SetActive(false);
+
+		orvilleManager.startTalking();
+		var subtitle = "Orville: \"Alright, just to refresh you, let’s go over the innovative functions of our flyer that makes it different than anything else, the three-axis control. Go ahead and take a look at the back rudder.\"";
+		subtitleManager.playSubtitleForTime(subtitle, 11f, startRearRudderSequence);
+	}
+
+	public void startRearRudderSequence() {
+		var subtitle = "Orville: \"As you may recall, the back rudder controls the yaw of our glider. Just like you would rotate your head to look left and right, the yaw allows us to swivel left and right. Try simulating this with your head right now.\"";
+		subtitleManager.playSubtitleForTime(subtitle, 11f, showYawMovementIcon);
+	}
+
+	void showYawMovementIcon() {
+		//vrHead.SetActive(true);
+		//rotationVRHeadScript.startYawRotate();
+
+		//airplaneControllerScript.enablePitchMovement();
+		airplaneControllerScript.enableRollMovement();
+		airplaneControllerScript.enableYawMovement();
+		tutScript.enabled = true;
+	}
+
+	public void startRollText() {
+		var subtitle = "Orville: \"Good job. Just as important as the yaw, is the roll. The roll moves the glider in the same way that you would roll your head to touch your ears to your shoulders. This is accomplished by wing warping, or the slight contortion of the wings to achieve a roll-like movement in the air. Go ahead and try simulating this with your head.\"";
+		subtitleManager.playSubtitleForTime(subtitle, 15f, null);
+	}
+
+	public void startMoveToPlane() {
+		var subtitle = "Orville: \"Nice job! Surprisingly, both the yaw and the roll are controlled by a U-shaped hip cradle in the middle of the cockpit. Why don’t you hop in and try it out?\"";
+		subtitleManager.playSubtitleForTime(subtitle, 10f, showYawMovementIcon);
+
+		currentTriggerManager = enterPlane;
+		tapToEnterPlaneCanvas.SetActive(true);
+	}
+
+	public void enterPlane() {
+		tapToEnterPlaneCanvas.SetActive(false);
+		currentTriggerManager = null;
+
+		// TODO: Swap the Cameras
+		startingCamera.SetActive(false);
+		startingRenderer.SetActive(false);
+		airplaneCardboard.SetActive(true);
+
+		// Start the tutorial segment for pitch
+		airplaneControllerScript.enablePitchMovement();
+
+		tutScript.startFrontRudder();
+	}
+
+	public void startPitchText() {
+		var subtitle = "Orville: \"Okay Wilbur! Right in front of you is a lever that controls the front elevator. The elevator controls the pitch of the flyer. It moves the flyer in an up-down motion, essential for giving the flyer lift in the air. Why don’t you give it a try?\"";
+		subtitleManager.playSubtitleForTime(subtitle, 10f, null);
+	}
+
+	public void startEngineTutorialSegment() {
+		tutScript.enabled = false;
+
+		var subtitle = "Orville: \"Nice Wilbur! Alright, now that you understand the roll, pitch, and yaw, why don’t we get you flying? As you may recall, our engine there to your right moves a bicycle chain which is connected to the two propellers in the back. It is quite revolutionary. Go ahead and fire it up!\"";
+		subtitleManager.playSubtitleForTime(subtitle, 17f, null);
+
+		// Show tap to start engine
+		// On engine start do last sequence
 	}
 }

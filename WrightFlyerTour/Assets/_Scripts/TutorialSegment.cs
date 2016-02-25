@@ -11,66 +11,87 @@ using System.Collections;
 */
 public class TutorialSegment : MonoBehaviour {
 
-	private bool completedWingL = true;
-	private bool completedWingR = true;
-	private bool completedBackRudL = true;
-	private bool completedBackRudR = true;
+	public GamePlayScript gameplayScript;
+
+	private bool completedWingL = false;
+	private bool completedWingR = false;
+	private bool completedBackRudL = false;
+	private bool completedBackRudR = false;
 	private bool completedFrontRudL = false;
 	private bool completedFrontRudR = false;
 	private bool gotOnPlane = false;
 
-	public Text tutText;
-	public Image panel;
+	private bool canStartFrontRudder = false;
 
+	public RotatingVRHead rotationVRHeadScript;
+	public GameObject vrHead;
+
+	public RotatingVRHead secondRotationVRHeadScript;
+	public GameObject secondVRHead;
+
+//	public Text tutText;
+//	public Image panel;
 
 	// Use this for initialization
 	void Start () {
-		tutText.text = "";
+		//tutText.text = "";
 		// panel.gameObject.SetActive(true);	// Panel is set inactive in the Autowalk script
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		panel.gameObject.SetActive(true);
-		if (!completedWingR) {
+		//panel.gameObject.SetActive(true);
+
+		if (!completedBackRudR) {
+			backRudderTut();
+		}
+		else if (!completedWingR) {
 			rollTut ();
 		}
-		else if (!completedBackRudR) {
-			backRudderTut();
+		else if (canStartFrontRudder) {
+			frontRudderTut();
 		}
 		/*
 		else if (!gotOnPlane) {
 			getOnPlane();
 		}
-		*/
+
 		else if (!completedFrontRudR) {
 			frontRudderTut ();
 		}
+		*/
 		else {
-			enabled = false;  // Turns off this script
-			tutText.text = "";
-			panel.gameObject.SetActive(false);
+			// enabled = false;  // Turns off this script
+			//tutText.text = "";
+			//panel.gameObject.SetActive(false);
 		}
 	}
 
-	void backRudderTut () {
+	public void backRudderTut () {
 		GameObject go = GameObject.Find("Back_Rudder");
+		if (!vrHead.activeInHierarchy) {
+			vrHead.SetActive(true);
+			rotationVRHeadScript.startYawRotate();
+			gameplayScript.startRearRudderSequence();
+		}
 		if (!completedBackRudL) {
-			tutText.text = "Turn your head left to control the yaw";
-			print("Turn your head left to control the yaw");
+			//tutText.text = "Turn your head left to control the yaw";
+			//print("Turn your head left to control the yaw");
 			if (go.transform.eulerAngles.y < 340 && go.transform.eulerAngles.y > 180) {
 				completedBackRudL = true;
-				print("Good!");
+				//print("Good!");
 			}
 		}
 
 		else {
-			tutText.text = "Look right to move the rudder right";
-			print("Look right to move the rudder right.");
+			//tutText.text = "Look right to move the rudder right";
+			//print("Look right to move the rudder right.");
 			if (go.transform.eulerAngles.y > 18 && go.transform.eulerAngles.y < 180) {
 				
-				print("Great job!");
+				//print("Great job!");
 				completedBackRudR = true;
+				vrHead.SetActive(false);
+
 				//enabled = false;
 			}
 
@@ -78,37 +99,52 @@ public class TutorialSegment : MonoBehaviour {
 		}
 	}
 
-	void rollTut () {
-		GameObject go = GameObject.Find("Center-flyer");
+	public void rollTut () {
+		GameObject go = GameObject.Find("Pivot_For_Flyer");
+		if (!vrHead.activeInHierarchy) {
+			vrHead.SetActive(true);
+			rotationVRHeadScript.startRollRotate();
+			gameplayScript.startRollText();
+
+		}
 		if (!completedWingL) {
-			tutText.text = "Try tilting your head left to control the roll";
-			print("Try tilting left to control the roll");
+			//tutText.text = "Try tilting your head left to control the roll";
+			//print("Try tilting left to control the roll");
 			if (go.transform.eulerAngles.z < 358 && go.transform.eulerAngles.z > 180) {
 				//tutText.CrossFadeAlpha(0.0f, 0.5f, false);
 				completedWingL = true;
-				print("Good!");
+				//print("Good!");
 			}
 		}
 
 		else {
 
-			tutText.text = "Try tilting right now";
+			//tutText.text = "Try tilting right now";
 			//tutText.CrossFadeAlpha(1.0f, 2.5f, false);
-			print("Try tilting right now");
+			//print("Try tilting right now");
 			if (go.transform.eulerAngles.z > 2 && go.transform.eulerAngles.z < 180) {
-				print("Great job!");
+				//print("Great job!");
 				completedWingR = true;
+				vrHead.SetActive(false);
 				//enabled = false;
+
+				gameplayScript.startMoveToPlane();
 			}
 
 
 		}
 	}
 
-	void frontRudderTut () {
-		GameObject go = GameObject.Find("Front Pivot");
+	public void frontRudderTut () {
+		GameObject go = GameObject.Find("Front_rudder");
+		if (!secondVRHead.activeInHierarchy) {
+			secondVRHead.SetActive(true);
+			secondRotationVRHeadScript.startPitchRotate();
+			gameplayScript.startPitchText();
+		}
 		if (!completedFrontRudL) {
-			tutText.text = "Now let's look down to pitch downwards";
+			
+			//tutText.text = "Now let's look down to pitch downwards";
 			if (go.transform.eulerAngles.x < 342 && go.transform.eulerAngles.x > 180) {
 				//tutText.CrossFadeAlpha(0.0f, 0.5f, false);
 				completedFrontRudL = true;
@@ -117,15 +153,19 @@ public class TutorialSegment : MonoBehaviour {
 
 		else {
 
-			tutText.text = "Let's try looking up";
+			//tutText.text = "Let's try looking up";
 			//tutText.CrossFadeAlpha(1.0f, 2.5f, false);
 			if (go.transform.eulerAngles.x > 18 && go.transform.eulerAngles.x < 180) {
 				completedFrontRudR = true;
+				secondVRHead.SetActive(false);
+				gameplayScript.startEngineTutorialSegment();
 				//enabled = false;
 			}
-
-
 		}
+	}
+
+	public void startFrontRudder() {
+		canStartFrontRudder = true;
 	}
 
 /*

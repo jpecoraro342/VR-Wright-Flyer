@@ -10,11 +10,10 @@ public class RotatingVRHead : MonoBehaviour {
 	public float maxRotation;
 	public float speed;
 
-	public Vector3 rotateVector;
+	Vector3 rotateVector = Vector3.zero;
 
 	// Use this for initialization
 	void Start () {
-		rotateVector = Vector3.zero;
 		// StartCoroutine(testSequence());
 	}
 	
