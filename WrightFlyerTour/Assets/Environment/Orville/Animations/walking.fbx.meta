@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 18eb5a31a2c87c64ba5205aa276ea456
-timeCreated: 1456350195
+guid: ca3045e7148a64185b2df420e88c4988
+timeCreated: 1456372736
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -119,18 +119,18 @@ ModelImporter:
       name: walking
       takeName: mixamo.com
       firstFrame: 0
-      lastFrame: 52
+      lastFrame: 31
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
-      hasAdditiveReferencePose: 1
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
-      loopBlendOrientation: 1
-      loopBlendPositionY: 1
-      loopBlendPositionXZ: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0

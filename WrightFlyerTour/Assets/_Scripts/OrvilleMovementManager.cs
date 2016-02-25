@@ -3,7 +3,8 @@ using System.Collections;
 
 public class OrvilleMovementManager : MonoBehaviour {
 
-	public float speed;
+	public float maxSpeed;
+	public float maxTurnSpeed;
 	public Transform movementTarget;
 
 	Animator animator;
@@ -20,22 +21,35 @@ public class OrvilleMovementManager : MonoBehaviour {
 		previousPosition = transform.position;
 
 		StartCoroutine(runTestSequence());
+		// startMovingToPlane();
 	}
 
 	void Update () {
 		if (isMovingTowardPlane) {
-			float step = speed * Time.deltaTime;
-			transform.position = Vector3.MoveTowards(transform.position, movementTarget.position, step);
-
-			if (transform.position == movementTarget.position) {
-				isMovingTowardPlane = false;
-			}
+			moveToPlane();
 		}
 
 		currentSpeed = (transform.position - previousPosition).magnitude / Time.deltaTime;
 		animator.SetFloat("Speed", currentSpeed);
 
 		previousPosition = transform.position;
+	}
+
+	void moveToPlane() {
+		var targetDir = movementTarget.position - transform.position;
+		var targetRotation = Quaternion.LookRotation(targetDir);
+
+		if (targetRotation != transform.rotation) {
+			transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, maxTurnSpeed * Time.deltaTime);
+		}
+		else {
+			float step = maxSpeed * Time.deltaTime;
+			transform.position = Vector3.MoveTowards(transform.position, movementTarget.position, step);
+
+			if (transform.position == movementTarget.position) {
+				isMovingTowardPlane = false;
+			}
+		}
 	}
 
 	public void startMovingToPlane() {
@@ -74,5 +88,6 @@ public class OrvilleMovementManager : MonoBehaviour {
 		yield return new WaitForSeconds(3);
 
 		startTalking();
+
 	}
 }
