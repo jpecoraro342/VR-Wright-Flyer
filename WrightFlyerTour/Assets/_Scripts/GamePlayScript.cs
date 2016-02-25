@@ -8,7 +8,7 @@ public class GamePlayScript : MonoBehaviour {
 	public OrvilleMovementManager orvilleManager;
 	public Autowalk walkScript;
 	public GameObject tapToToggleWalkCanvasObject;
-
+	public GameObject wilburWayPoint;
 
 	TriggerManager currentTriggerManager;
 
@@ -67,11 +67,41 @@ public class GamePlayScript : MonoBehaviour {
 	}
 
 	void endOrvilleSecondLine() {
+		startOrvilleThirdLine();
+	}
+
+	void startOrvilleThirdLine() {
+		subtitleManager.playSubtitleForTime("Orville: \"I still can’t believe we finally flew our first successful flight today! I was off the ground for a whole 12 seconds and 112 feet.\"", 8f, startOrvilleFourthLine);
+	}
+		
+	void startOrvilleFourthLine() {
+		subtitleManager.playSubtitleForTime("Orville: \"That flight and the other ones today have been much more successful than that one three days ago.\"", 6f, startOrvilleFifthLine);
+	}
+
+	void startOrvilleFifthLine() {
+		subtitleManager.playSubtitleForTime("Orville: \"If I recall correctly, you got up for a few seconds on that flight before crashing.\"", 6f, startOrvilleSixthLine);
+	}
+
+	void startOrvilleSixthLine() {
+		subtitleManager.playSubtitleForTime("Orville: \"Now that we have the front elevator fixed, we’ve been doing much better. The 21 mile per hour headwind helps a lot too.\"", 6f, endOrvilleWalkSequence);
+	}
+
+	void endOrvilleWalkSequence() {
 		orvilleManager.stopTalking();
 	}
 
 	void startedWalkingToPlane() {
 		tapToToggleWalkCanvasObject.SetActive(false);
 		currentTriggerManager = null;
+	}
+
+	public void wilburReachedWayPoint() {
+		Debug.Log("Start all the plane crap");
+		wilburWayPoint.SetActive(false);
+		walkScript.enabled = false;
+	}
+
+	void startOrvillePlaneInstructions() {
+
 	}
 }

@@ -121,5 +121,4 @@ public class Autowalk : MonoBehaviour
         //SceneManager.LoadScene("DungeonScene", LoadSceneMode.Single);
 
     }
-    
 }

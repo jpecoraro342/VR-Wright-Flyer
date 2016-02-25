@@ -114,6 +114,7 @@
      <Compile Include="Assets\_Scripts\SubtitleManager.cs" />
      <Compile Include="Assets\_Scripts\ThrottleManager.cs" />
      <Compile Include="Assets\_Scripts\TutorialSegment.cs" />
+     <Compile Include="Assets\_Scripts\WilburScriptManager.cs" />
      <Compile Include="Assets\_Scripts\WingWarpController.cs" />
      <None Include="Assets\Imported Assets\Cardboard\Resources\SkyboxMesh.shader" />
      <None Include="Assets\Imported Assets\Cardboard\Distortion\CardboardDistortion.cginc" />
