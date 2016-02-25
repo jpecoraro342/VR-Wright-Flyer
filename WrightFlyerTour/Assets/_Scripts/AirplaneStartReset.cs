@@ -8,10 +8,13 @@ public class AirplaneStartReset : MonoBehaviour {
 	public GameObject plane;
 	public GameObject planeCamera;
 	public GameObject charCamera;
+	public PropellerRotate p1;
+	public PropellerRotate p2;
 	public FrontRudderController frontRudScript;
 	public BackRudderController backRudScript;
 	public WingWarpController wingWarpScript;
 	public CustomAirplaneUserControl planeScript;
+	public AeroplaneController planeController;
 
 
 
@@ -94,8 +97,6 @@ public class AirplaneStartReset : MonoBehaviour {
 		plane.GetComponent<Rigidbody>().useGravity = true;
 		plane.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
 		planeScript.enabled = true;
-
-
 	}
 
 	void disablePlaneMovement() {
@@ -134,11 +135,15 @@ public class AirplaneStartReset : MonoBehaviour {
 
 	public void turnEngineOn() {
 		//planeScript.enabled = true;
-
+		p1.enabled = true;
+		p2.enabled = true;
+		// planeScript.enabled = true;
 	}
 
 	public void turnEngineOff() {
-
+		p1.enabled = false;
+		p2.enabled = false;
+		// planeScript.enabled = false;
 	}
 
 	IEnumerator resetRigidBody(GameObject gobject) {

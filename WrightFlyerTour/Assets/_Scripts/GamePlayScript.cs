@@ -21,6 +21,9 @@ public class GamePlayScript : MonoBehaviour {
 	public GameObject startingRenderer;
 	public GameObject airplaneCardboard;
 
+	public GameObject tapToTurnEngineOn;
+	public GameObject tapToFly;
+
 	TriggerManager currentTriggerManager;
 
 	private delegate void TriggerManager();
@@ -40,8 +43,21 @@ public class GamePlayScript : MonoBehaviour {
 			if (currentTriggerManager != null) {
 				Debug.Log("Cardboard Triggered");
 				currentTriggerManager();
+				// skipToFlying();
 			}
 		}
+	}
+
+	void skipToFlying() {
+		startingCamera.SetActive(false);
+		startingRenderer.SetActive(false);
+		airplaneCardboard.SetActive(true);
+
+		airplaneControllerScript.enablePitchMovement();
+		airplaneControllerScript.enableRollMovement();
+		airplaneControllerScript.enableYawMovement();
+
+		startFlying();
 	}
 
 	void openingTriggerManager() {
@@ -165,7 +181,6 @@ public class GamePlayScript : MonoBehaviour {
 		tapToEnterPlaneCanvas.SetActive(false);
 		currentTriggerManager = null;
 
-		// TODO: Swap the Cameras
 		startingCamera.SetActive(false);
 		startingRenderer.SetActive(false);
 		airplaneCardboard.SetActive(true);
@@ -185,9 +200,30 @@ public class GamePlayScript : MonoBehaviour {
 		tutScript.enabled = false;
 
 		var subtitle = "Orville: \"Nice Wilbur! Alright, now that you understand the roll, pitch, and yaw, why don’t we get you flying? As you may recall, our engine there to your right moves a bicycle chain which is connected to the two propellers in the back. It is quite revolutionary. Go ahead and fire it up!\"";
-		subtitleManager.playSubtitleForTime(subtitle, 17f, null);
+		subtitleManager.playSubtitleForTime(subtitle, 16f, null);
 
-		// Show tap to start engine
-		// On engine start do last sequence
+		tapToTurnEngineOn.SetActive(true);
+		currentTriggerManager = turnOnEngine;
+	}
+
+	public void turnOnEngine() {
+		tapToTurnEngineOn.SetActive(false);
+		currentTriggerManager = null;
+
+		airplaneControllerScript.turnEngineOn();
+		lastFrikingThingToSay();
+	}
+
+	public void lastFrikingThingToSay() {
+		var subtitle = "Orville: \"Okay, Wilbur! Why don’t you give it a test flight whenever you are ready!\"";
+		subtitleManager.playSubtitleForTime(subtitle, 4f, null);
+		tapToFly.SetActive(true);
+		currentTriggerManager = startFlying;
+	}
+
+	public void startFlying() {
+		tapToFly.SetActive(false);
+
+		airplaneControllerScript.enablePlaneMovement();
 	}
 }
