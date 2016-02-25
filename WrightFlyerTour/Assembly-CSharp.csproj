@@ -104,6 +104,7 @@
      <Compile Include="Assets\_Scripts\FPSInputController.cs" />
      <Compile Include="Assets\_Scripts\FlightStats.cs" />
      <Compile Include="Assets\_Scripts\FrontRudderController.cs" />
+     <Compile Include="Assets\_Scripts\GamePlayScript.cs" />
      <Compile Include="Assets\_Scripts\GyroscopeEnable.cs" />
      <Compile Include="Assets\_Scripts\MobileTiltControlsManager.cs" />
      <Compile Include="Assets\_Scripts\ObjectReset.cs" />

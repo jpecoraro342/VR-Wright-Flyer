@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/AirplaneStartReset.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/GamePlayScript.cs">
     <Files>
       <File FileName="Assets/_Scripts/CustomAirplaneUserControl.cs" Line="47" Column="13" />
       <File FileName="Assets/Imported Assets/CrossPlatformInput/Scripts/CrossPlatformInputManager.cs" Line="181" Column="40" />
@@ -9,7 +9,10 @@
       <File FileName="Assets/_Scripts/ObjectReset.cs" Line="28" Column="3" />
       <File FileName="Assets/Imported Assets/Cardboard/Scripts/GazeInputModule.cs" Line="1" Column="1" />
       <File FileName="Assets/_Scripts/SubtitleManager.cs" Line="31" Column="26" />
-      <File FileName="Assets/_Scripts/AirplaneStartReset.cs" Line="91" Column="2" />
+      <File FileName="Assets/_Scripts/AirplaneStartReset.cs" Line="24" Column="41" />
+      <File FileName="Assets/_Scripts/OrvilleMovementManager.cs" Line="81" Column="3" />
+      <File FileName="Assets/_Scripts/Autowalk.cs" Line="51" Column="1" />
+      <File FileName="Assets/_Scripts/GamePlayScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -16,7 +16,7 @@ public class Autowalk : MonoBehaviour
 {
 
 	public AudioSource AudioFile;
-	public Image panel;
+	// public Image panel;
 	private const int RIGHT_ANGLE = 90; 
 	
 	// This variable determinates if the player will move or not 
@@ -48,7 +48,7 @@ public class Autowalk : MonoBehaviour
 	void Start () 
 	{
 		head = Camera.main.GetComponent<StereoController>().Head;
-		panel.gameObject.SetActive(false);
+		// panel.gameObject.SetActive(false);
 	}
 	
 	void Update () 
@@ -57,12 +57,16 @@ public class Autowalk : MonoBehaviour
         if (walkWhenTriggered && !walkWhenLookDown && !isWalking && Cardboard.SDK.CardboardTriggered) 
 		{
 			isWalking = true;
-			AudioFile.Play ();
+			if (AudioFile != null) {
+				AudioFile.Play ();
+			}
 		} 
 		else if (walkWhenTriggered && !walkWhenLookDown && isWalking && Cardboard.SDK.CardboardTriggered) 
 		{
 			isWalking = false;
-			AudioFile.Stop ();
+			if (AudioFile != null) {
+				AudioFile.Stop ();
+			}
 		}
 		
 		// Walk when player looks below the threshold angle 

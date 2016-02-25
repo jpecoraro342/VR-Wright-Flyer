@@ -5,7 +5,11 @@ public class OrvilleMovementManager : MonoBehaviour {
 
 	public float maxSpeed;
 	public float maxTurnSpeed;
-	public Transform movementTarget;
+
+	public Transform waypoint1;
+	public Transform waypoint2;
+
+	Transform movementTarget;
 
 	Animator animator;
 
@@ -20,7 +24,9 @@ public class OrvilleMovementManager : MonoBehaviour {
 		animator = GetComponent<Animator>();
 		previousPosition = transform.position;
 
-		StartCoroutine(runTestSequence());
+		movementTarget = waypoint1;
+
+		// StartCoroutine(runTestSequence());
 		// startMovingToPlane();
 	}
 
@@ -28,11 +34,27 @@ public class OrvilleMovementManager : MonoBehaviour {
 		if (isMovingTowardPlane) {
 			moveToPlane();
 		}
+		else {
+			transform.position = previousPosition;
+		}
 
 		currentSpeed = (transform.position - previousPosition).magnitude / Time.deltaTime;
 		animator.SetFloat("Speed", currentSpeed);
 
 		previousPosition = transform.position;
+	}
+
+	void OnTriggerEnter(Collider other) {
+		if (other.gameObject.tag == "waypoint2") {
+			Debug.Log("Stop moving to plane");
+			isMovingTowardPlane = false;
+			Destroy(gameObject.GetComponent<Rigidbody>());
+
+			//TODO: adjust rotation
+		}
+		else {
+			movementTarget = waypoint2;
+		}
 	}
 
 	void moveToPlane() {
@@ -45,10 +67,6 @@ public class OrvilleMovementManager : MonoBehaviour {
 		else {
 			float step = maxSpeed * Time.deltaTime;
 			transform.position = Vector3.MoveTowards(transform.position, movementTarget.position, step);
-
-			if (transform.position == movementTarget.position) {
-				isMovingTowardPlane = false;
-			}
 		}
 	}
 
